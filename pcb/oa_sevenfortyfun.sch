@@ -15081,6 +15081,109 @@ chip</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Ai_Electromechanical">
+<description>&lt;h3&gt;Ai Electromechanical&lt;/h3&gt;
+&lt;p&gt;
+This library includes mechanical hardware (e.g., stand-offs), buttons, switches, etc.
+&lt;/p&gt;</description>
+<packages>
+<package name="STAND-OFF">
+<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
+This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.302"/>
+<circle x="0" y="0" radius="3.175" width="0.127" layer="51"/>
+</package>
+<package name="STAND-OFF-TIGHT">
+<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
+This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.048"/>
+<circle x="0" y="0" radius="3.175" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="STAND-OFF">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STAND-OFF" prefix="STANDOFF">
+<description>&lt;b&gt;#4 Stand Off&lt;/b&gt;&lt;p&gt;
+This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.</description>
+<gates>
+<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STAND-OFF">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TIGHT" package="STAND-OFF-TIGHT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Ai_Connectors">
+<description>&lt;h3&gt;Ai Connectors&lt;/h3&gt;
+&lt;p&gt;
+This library includes USB, pin headers and sockets in different configurations (e.g., pad shapes, with or without silkscreen), SD cards, screw terminals, etc.
+&lt;/p&gt;</description>
+<packages>
+<package name="1X01">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="15">&gt;NAME</text>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="1X01">
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<text x="-2.54" y="3.175" size="1.524" layer="95" ratio="15">&gt;NAME</text>
+<pin name="1" x="5.08" y="0" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1X01" prefix="J">
+<gates>
+<gate name="G$1" symbol="1X01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15132,6 +15235,18 @@ chip</description>
 <part name="R10" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
 <part name="R11" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
 <part name="Q15" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-PNP" device="" value="2N3906"/>
+<part name="STANDOFF1" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="STANDOFF2" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="STANDOFF3" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="STANDOFF4" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="J1" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J2" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J3" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J4" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J5" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J6" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J7" library="Ai_Connectors" deviceset="1X01" device=""/>
+<part name="J8" library="Ai_Connectors" deviceset="1X01" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15140,7 +15255,7 @@ chip</description>
 <wire x1="134.62" y1="142.24" x2="134.62" y2="50.8" width="0.4064" layer="94" style="dashdot"/>
 <wire x1="168.91" y1="142.24" x2="168.91" y2="50.8" width="0.4064" layer="94" style="dashdot"/>
 <text x="62.23" y="144.78" size="1.778" layer="94" font="vector" ratio="15">DIFFERENTIAL AMPLIFIER</text>
-<text x="102.87" y="144.78" size="1.778" layer="94" font="vector" ratio="15">BIAS GENERATOR</text>
+<text x="106.68" y="144.78" size="1.778" layer="94" font="vector" ratio="15">BIAS GENERATOR</text>
 <text x="143.51" y="144.78" size="1.778" layer="94" font="vector" ratio="15">GAIN STAGE</text>
 <text x="171.45" y="144.78" size="1.778" layer="94" font="vector" ratio="15">OUTPUT STAGE</text>
 <wire x1="55.88" y1="142.24" x2="55.88" y2="50.8" width="0.4064" layer="94" style="dashdot"/>
@@ -15184,6 +15299,18 @@ chip</description>
 <instance part="R10" gate="G$1" x="186.69" y="107.95" rot="R270"/>
 <instance part="R11" gate="G$1" x="186.69" y="91.44" rot="R270"/>
 <instance part="Q15" gate="G$1" x="184.15" y="77.47" rot="MR0"/>
+<instance part="STANDOFF1" gate="G$1" x="132.08" y="2.54"/>
+<instance part="STANDOFF2" gate="G$1" x="137.16" y="2.54"/>
+<instance part="STANDOFF3" gate="G$1" x="142.24" y="2.54"/>
+<instance part="STANDOFF4" gate="G$1" x="127" y="2.54"/>
+<instance part="J1" gate="G$1" x="83.82" y="40.64" rot="R270"/>
+<instance part="J2" gate="G$1" x="107.95" y="40.64" rot="R270"/>
+<instance part="J3" gate="G$1" x="133.35" y="40.64" rot="R270"/>
+<instance part="J4" gate="G$1" x="158.75" y="40.64" rot="R270"/>
+<instance part="J5" gate="G$1" x="167.64" y="158.75" rot="R90"/>
+<instance part="J6" gate="G$1" x="146.05" y="158.75" rot="R90"/>
+<instance part="J7" gate="G$1" x="116.84" y="158.75" rot="R90"/>
+<instance part="J8" gate="G$1" x="90.17" y="158.75" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15263,7 +15390,7 @@ chip</description>
 <wire x1="76.2" y1="81.28" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OFFSET2" class="0">
+<net name="OFFSET_N2" class="0">
 <segment>
 <pinref part="Q7" gate="G$1" pin="E"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -15273,16 +15400,10 @@ chip</description>
 <junction x="87.63" y="69.85"/>
 <label x="53.34" y="69.85" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="OFFSET1" class="0">
 <segment>
-<pinref part="Q6" gate="G$1" pin="E"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="64.77" y1="76.2" x2="64.77" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="74.93" x2="64.77" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="74.93" x2="53.34" y2="74.93" width="0.1524" layer="91"/>
-<junction x="64.77" y="74.93"/>
-<label x="53.34" y="74.93" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="163.83" x2="167.64" y2="166.37" width="0.1524" layer="91"/>
+<label x="167.64" y="166.37" size="1.27" layer="95" font="vector" ratio="15" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15307,6 +15428,11 @@ chip</description>
 <wire x1="59.69" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <label x="53.34" y="116.84" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="133.35" y1="35.56" x2="133.35" y2="33.02" width="0.1524" layer="91"/>
+<label x="133.35" y="33.02" size="1.27" layer="95" font="vector" ratio="15" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="IN-" class="0">
 <segment>
@@ -15315,6 +15441,11 @@ chip</description>
 <wire x1="96.52" y1="116.84" x2="96.52" y2="110.49" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="110.49" x2="53.34" y2="110.49" width="0.1524" layer="91"/>
 <label x="53.34" y="110.49" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="107.95" y1="35.56" x2="107.95" y2="33.02" width="0.1524" layer="91"/>
+<label x="107.95" y="33.02" size="1.27" layer="95" font="vector" ratio="15" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -15459,6 +15590,11 @@ chip</description>
 <junction x="186.69" y="85.09"/>
 <label x="196.85" y="85.09" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="146.05" y1="163.83" x2="146.05" y2="166.37" width="0.1524" layer="91"/>
+<label x="146.05" y="166.37" size="1.27" layer="95" font="vector" ratio="15" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="VCC-" class="0">
 <segment>
@@ -15503,6 +15639,11 @@ chip</description>
 <junction x="59.69" y="54.61"/>
 <label x="53.34" y="54.61" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="158.75" y1="35.56" x2="158.75" y2="33.02" width="0.1524" layer="91"/>
+<label x="158.75" y="33.02" size="1.27" layer="95" font="vector" ratio="15" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="VCC+" class="0">
 <segment>
@@ -15534,6 +15675,34 @@ chip</description>
 <wire x1="59.69" y1="139.7" x2="59.69" y2="137.16" width="0.1524" layer="91"/>
 <junction x="59.69" y="137.16"/>
 <label x="53.34" y="137.16" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="163.83" x2="116.84" y2="166.37" width="0.1524" layer="91"/>
+<label x="116.84" y="166.37" size="1.27" layer="95" font="vector" ratio="15" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="OFFSET_N1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<label x="83.82" y="33.02" size="1.27" layer="95" font="vector" ratio="15" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="E"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="64.77" y1="76.2" x2="64.77" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="74.93" x2="64.77" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="74.93" x2="53.34" y2="74.93" width="0.1524" layer="91"/>
+<junction x="64.77" y="74.93"/>
+<label x="53.34" y="74.93" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<pinref part="J8" gate="G$1" pin="1"/>
+<wire x1="90.17" y1="163.83" x2="90.17" y2="166.37" width="0.1524" layer="91"/>
+<label x="90.17" y="166.37" size="1.27" layer="95" font="vector" ratio="15" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>

@@ -155,7 +155,8 @@
 <plain>
 <wire x1="88.43558125" y1="63.373" x2="0.567959375" y2="63.373" width="0.2032" layer="20"/>
 <wire x1="0.567959375" y1="63.373" x2="0" y2="62.805040625" width="0.2032" layer="20" curve="90"/>
-<wire x1="0" y1="62.805040625" x2="0" y2="0.46441875" width="0.2032" layer="20"/>
+<wire x1="0" y1="62.805040625" x2="0" y2="36.195" width="0.2032" layer="20"/>
+<wire x1="0" y1="27.305" x2="0" y2="0.46441875" width="0.2032" layer="20"/>
 <wire x1="0" y1="0.46441875" x2="0.46441875" y2="0" width="0.2032" layer="20" curve="90"/>
 <wire x1="0.46441875" y1="0" x2="88.392" y2="0" width="0.2032" layer="20"/>
 <wire x1="88.392" y1="0" x2="88.9" y2="0.508" width="0.2032" layer="20" curve="90"/>
@@ -167,6 +168,7 @@
 <text x="30.48" y="59.69" size="1.524" layer="21" font="vector" ratio="15">BIAS GENERATOR</text>
 <text x="52.07" y="59.69" size="1.524" layer="21" font="vector" ratio="15">GAIN STAGE</text>
 <text x="69.85" y="59.69" size="1.524" layer="21" font="vector" ratio="15">OUTPUT STAGE</text>
+<wire x1="0" y1="36.195" x2="0" y2="27.305" width="0.2032" layer="20" curve="-180"/>
 </plain>
 <libraries>
 <library name="Ai_Miscellany">
@@ -3867,6 +3869,45 @@ This library includes capacitors, inductors, resistors, fuses, beads, potentiome
 </package>
 </packages>
 </library>
+<library name="Ai_Electromechanical">
+<description>&lt;h3&gt;Ai Electromechanical&lt;/h3&gt;
+&lt;p&gt;
+This library includes mechanical hardware (e.g., stand-offs), buttons, switches, etc.
+&lt;/p&gt;</description>
+<packages>
+<package name="STAND-OFF">
+<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
+This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.302"/>
+<circle x="0" y="0" radius="3.175" width="0.127" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="Ai_Connectors">
+<description>&lt;h3&gt;Ai Connectors&lt;/h3&gt;
+&lt;p&gt;
+This library includes USB, pin headers and sockets in different configurations (e.g., pad shapes, with or without silkscreen), SD cards, screw terminals, etc.
+&lt;/p&gt;</description>
+<packages>
+<package name="1X01">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="15">&gt;NAME</text>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4081,6 +4122,18 @@ design rules under a new name.</description>
 <element name="R10" library="Ai_Passives" package="RES-AXIAL-0.4" value="" x="81.28" y="31.75" rot="R270"/>
 <element name="R11" library="Ai_Passives" package="RES-AXIAL-0.4" value="" x="81.28" y="19.05" rot="R270"/>
 <element name="Q15" library="Ai_DiscreteSemis" package="TO-92-PNP" value="2N3906" x="81.28" y="7.62"/>
+<element name="STANDOFF1" library="Ai_Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54"/>
+<element name="STANDOFF2" library="Ai_Electromechanical" package="STAND-OFF" value="STAND-OFF" x="86.36" y="2.54"/>
+<element name="STANDOFF3" library="Ai_Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="60.96"/>
+<element name="STANDOFF4" library="Ai_Electromechanical" package="STAND-OFF" value="STAND-OFF" x="86.36" y="60.96"/>
+<element name="J1" library="Ai_Connectors" package="1X01" value="1X01" x="17.78" y="2.54"/>
+<element name="J2" library="Ai_Connectors" package="1X01" value="1X01" x="35.56" y="2.54"/>
+<element name="J3" library="Ai_Connectors" package="1X01" value="1X01" x="53.34" y="2.54"/>
+<element name="J4" library="Ai_Connectors" package="1X01" value="1X01" x="71.12" y="2.54"/>
+<element name="J5" library="Ai_Connectors" package="1X01" value="1X01" x="71.12" y="60.96"/>
+<element name="J6" library="Ai_Connectors" package="1X01" value="1X01" x="53.34" y="60.96"/>
+<element name="J7" library="Ai_Connectors" package="1X01" value="1X01" x="34.29" y="60.96"/>
+<element name="J8" library="Ai_Connectors" package="1X01" value="1X01" x="17.78" y="60.96"/>
 </elements>
 <signals>
 <signal name="3/RS2">
@@ -4133,15 +4186,12 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="22.86" x2="19.05" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="15.24" x2="19.05" y2="30.48" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="OFFSET2">
+<signal name="OFFSET_N2">
 <contactref element="Q7" pad="1"/>
 <contactref element="R2" pad="P$1"/>
+<contactref element="J5" pad="1"/>
 <wire x1="26.67" y1="15.24" x2="26.67" y2="20.32" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="OFFSET1">
-<contactref element="Q6" pad="1"/>
-<contactref element="R1" pad="P$1"/>
-<wire x1="11.43" y1="15.24" x2="11.43" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="60.96" x2="26.67" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="Q4" pad="2"/>
@@ -4154,9 +4204,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="IN+">
 <contactref element="Q2" pad="2"/>
+<contactref element="J3" pad="1"/>
+<wire x1="53.34" y1="2.54" x2="11.43" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IN-">
 <contactref element="Q1" pad="2"/>
+<contactref element="J2" pad="1"/>
+<wire x1="35.56" y1="2.54" x2="26.67" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="Q8" pad="1"/>
@@ -4242,7 +4296,9 @@ design rules under a new name.</description>
 <signal name="OUT">
 <contactref element="Q15" pad="3"/>
 <contactref element="R11" pad="P$2"/>
-<wire x1="81.28" y1="13.97" x2="81.28" y2="5.08" width="0" layer="19" extent="1-1"/>
+<contactref element="J6" pad="1"/>
+<wire x1="81.28" y1="5.08" x2="81.28" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="60.96" x2="81.28" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC-">
 <contactref element="R1" pad="P$2"/>
@@ -4254,14 +4310,16 @@ design rules under a new name.</description>
 <contactref element="R8" pad="P$2"/>
 <contactref element="R9" pad="P$2"/>
 <contactref element="Q15" pad="1"/>
+<contactref element="J4" pad="1"/>
 <wire x1="66.04" y1="15.24" x2="81.28" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="52.07" y1="12.7" x2="66.04" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="5.08" x2="52.07" y2="12.7" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="5.08" x2="11.43" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="5.08" x2="19.05" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="5.08" x2="26.67" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="26.67" x2="36.83" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="58.42" y1="15.24" x2="45.72" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="15.24" x2="66.04" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="52.07" y1="12.7" x2="58.42" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="26.67" x2="52.07" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="5.08" x2="52.07" y2="12.7" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="5.08" x2="36.83" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="5.08" x2="26.67" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="5.08" x2="19.05" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="2.54" x2="11.43" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC+">
 <contactref element="Q17" pad="3"/>
@@ -4270,11 +4328,23 @@ design rules under a new name.</description>
 <contactref element="Q19" pad="3"/>
 <contactref element="Q20" pad="3"/>
 <contactref element="Q13" pad="3"/>
-<wire x1="19.05" y1="35.56" x2="81.28" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="52.07" x2="19.05" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="52.07" x2="19.05" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="52.07" x2="36.83" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="52.07" x2="45.72" y2="52.07" width="0" layer="19" extent="1-1"/>
+<contactref element="J7" pad="1"/>
+<wire x1="66.04" y1="52.07" x2="81.28" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="52.07" x2="66.04" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="52.07" x2="45.72" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="52.07" x2="36.83" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="35.56" x2="19.05" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="60.96" x2="19.05" y2="35.56" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OFFSET_N1">
+<contactref element="J1" pad="1"/>
+<contactref element="Q6" pad="1"/>
+<contactref element="R1" pad="P$1"/>
+<wire x1="11.43" y1="15.24" x2="11.43" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="2.54" x2="11.43" y2="15.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="NC">
+<contactref element="J8" pad="1"/>
 </signal>
 </signals>
 <errors>
