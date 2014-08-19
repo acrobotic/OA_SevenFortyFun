@@ -14714,7 +14714,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <pad name="2" x="0" y="0" drill="0.8128" diameter="1.8796" rot="R90"/>
 <pad name="1" x="0" y="-2.54" drill="0.8128" diameter="1.8796" rot="R90"/>
 <text x="-3.048" y="1.778" size="1.27" layer="25" font="vector" ratio="15" rot="R180">&gt;NAME</text>
-<text x="-3.048" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R180">2N3904</text>
+<text x="-3.048" y="0" size="1.27" layer="25" font="vector" ratio="15" rot="R180">&gt;VALUE</text>
 <wire x1="-1.016" y1="-2.54" x2="-1.016" y2="2.54" width="0.2032" layer="21" curve="-136.397181"/>
 <wire x1="1.016" y1="2.54" x2="1.778" y2="2.032" width="0.2032" layer="21" curve="-49.398705"/>
 <wire x1="1.778" y1="2.032" x2="1.778" y2="-2.032" width="0.2032" layer="21"/>
@@ -14728,7 +14728,7 @@ This library includes discrete semiconductor devices such as diodes, FETs, etc.
 <pad name="2" x="0" y="0" drill="0.8128" diameter="1.8796" rot="R270"/>
 <pad name="1" x="0" y="2.54" drill="0.8128" diameter="1.8796" rot="R270"/>
 <text x="3.048" y="2.032" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="3.048" y="0" size="1.27" layer="25" font="vector" ratio="15">2N3906</text>
+<text x="3.048" y="0" size="1.27" layer="25" font="vector" ratio="15">&gt;VALUE</text>
 <wire x1="1.016" y1="2.54" x2="1.016" y2="-2.54" width="0.2032" layer="21" curve="-136.397181"/>
 <wire x1="-1.016" y1="-2.54" x2="-1.778" y2="-2.032" width="0.2032" layer="21" curve="-49.398705"/>
 <wire x1="-1.778" y1="-2.032" x2="-1.778" y2="2.032" width="0.2032" layer="21"/>
@@ -15202,6 +15202,26 @@ This library includes USB, pin headers and sockets in different configurations (
 <wire x1="5.08" y1="0.635" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="-1.905" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
 </package>
+<package name="2X04-SHR">
+<wire x1="1.27" y1="-4.425" x2="1.27" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-3.302" x2="-1.27" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-3.302" x2="-1.27" y2="-4.425" width="0.2032" layer="21"/>
+<pad name="5" x="1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-3.81" y="-1.27" drill="1.016" diameter="1.8796" first="yes"/>
+<pad name="3" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<wire x1="-8.81" y1="-4.425" x2="-8.81" y2="4.425" width="0.2032" layer="21"/>
+<wire x1="-8.81" y1="4.425" x2="8.81" y2="4.425" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-4.425" x2="-8.81" y2="-4.425" width="0.2032" layer="21"/>
+<text x="-8.89" y="4.826" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="8.81" y1="4.425" x2="8.81" y2="-4.425" width="0.2032" layer="21"/>
+<pad name="6" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<wire x1="8.81" y1="-4.425" x2="1.27" y2="-4.425" width="0.2032" layer="21"/>
+<text x="-6.096" y="-2.032" size="1.27" layer="25" font="vector" ratio="15">1</text>
+</package>
 </packages>
 <symbols>
 <symbol name="1X01-TERM">
@@ -15261,6 +15281,21 @@ This library includes USB, pin headers and sockets in different configurations (
 <technology name=""/>
 </technologies>
 </device>
+<device name="SHR" package="2X04-SHR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -15281,7 +15316,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
 <attribute name="REV" value="1.0"/>
 </part>
-<part name="U$3" library="Ai_Miscellany" deviceset="AI-LOGO" device="XS"/>
+<part name="U$3" library="Ai_Miscellany" deviceset="AI-LOGO" device="L" value="AI-LOGOL"/>
 <part name="Q2" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="U$1" library="Ai_Power" deviceset="VCC+" device=""/>
 <part name="Q1" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
@@ -15291,30 +15326,30 @@ This library includes USB, pin headers and sockets in different configurations (
 <part name="Q5" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q6" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q7" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
-<part name="R1" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
-<part name="R2" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
-<part name="R3" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="R1" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="1K"/>
+<part name="R2" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="1K"/>
+<part name="R3" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="50K"/>
 <part name="U$2" library="Ai_Power" deviceset="VCC-" device=""/>
 <part name="Q18" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-PNP" device="" value="2N3906"/>
 <part name="Q8" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
-<part name="R4" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="R4" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="5K"/>
 <part name="Q19" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-PNP" device="" value="2N3906"/>
 <part name="Q9" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
-<part name="R5" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="R5" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="39K"/>
 <part name="Q20" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-PNP" device="" value="2N3906"/>
-<part name="C1" library="Ai_Passives" deviceset="CAP" device="025X050"/>
-<part name="R6" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
-<part name="R7" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
-<part name="R8" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="C1" library="Ai_Passives" deviceset="CAP" device="025X050" value="30pF"/>
+<part name="R6" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="4.5K"/>
+<part name="R7" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="7.5K"/>
+<part name="R8" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="50K"/>
 <part name="Q10" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q11" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
-<part name="R9" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="R9" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="50"/>
 <part name="Q12" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q16" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q13" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
 <part name="Q14" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-NPN" device="" value="2N3904"/>
-<part name="R10" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
-<part name="R11" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4"/>
+<part name="R10" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="25"/>
+<part name="R11" library="Ai_Passives" deviceset="RES" device="AXIAL-0.4" value="50"/>
 <part name="Q15" library="Ai_DiscreteSemis" deviceset="TRANSISTOR-PNP" device="" value="2N3906"/>
 <part name="STANDOFF1" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF2" library="Ai_Electromechanical" deviceset="STAND-OFF" device=""/>
@@ -15328,7 +15363,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <part name="J6" library="Ai_Connectors" deviceset="1X01-TERM" device=""/>
 <part name="J7" library="Ai_Connectors" deviceset="1X01-TERM" device=""/>
 <part name="J8" library="Ai_Connectors" deviceset="1X01-TERM" device=""/>
-<part name="J9" library="Ai_Connectors" deviceset="2X04" device=""/>
+<part name="J9" library="Ai_Connectors" deviceset="2X04" device="SHR" value="2X04SHR"/>
 </parts>
 <sheets>
 <sheet>
@@ -15355,9 +15390,9 @@ This library includes USB, pin headers and sockets in different configurations (
 <instance part="Q3" gate="G$1" x="85.09" y="102.87" rot="MR0"/>
 <instance part="Q4" gate="G$1" x="67.31" y="102.87"/>
 <instance part="Q5" gate="G$1" x="73.66" y="91.44"/>
-<instance part="Q6" gate="G$1" x="67.31" y="81.28" rot="MR0"/>
-<instance part="Q7" gate="G$1" x="85.09" y="81.28"/>
-<instance part="R1" gate="G$1" x="64.77" y="63.5" rot="R270"/>
+<instance part="Q6" gate="G$1" x="67.31" y="80.01" rot="MR0"/>
+<instance part="Q7" gate="G$1" x="85.09" y="80.01"/>
+<instance part="R1" gate="G$1" x="64.77" y="63.5" rot="MR270"/>
 <instance part="R2" gate="G$1" x="87.63" y="63.5" rot="R270"/>
 <instance part="R3" gate="G$1" x="76.2" y="63.5" rot="R270"/>
 <instance part="U$2" gate="G$1" x="59.69" y="57.15"/>
@@ -15372,16 +15407,16 @@ This library includes USB, pin headers and sockets in different configurations (
 <instance part="R6" gate="G$1" x="151.13" y="115.57" rot="R270"/>
 <instance part="R7" gate="G$1" x="151.13" y="100.33" rot="R270"/>
 <instance part="R8" gate="G$1" x="151.13" y="62.23" rot="R270"/>
-<instance part="Q10" gate="G$1" x="148.59" y="88.9"/>
+<instance part="Q10" gate="G$1" x="148.59" y="86.36"/>
 <instance part="Q11" gate="G$1" x="144.78" y="69.85" rot="MR0"/>
 <instance part="R9" gate="G$1" x="161.29" y="62.23" rot="R270"/>
-<instance part="Q12" gate="G$1" x="158.75" y="80.01"/>
+<instance part="Q12" gate="G$1" x="158.75" y="77.47"/>
 <instance part="Q16" gate="G$1" x="158.75" y="107.95"/>
 <instance part="Q13" gate="G$1" x="184.15" y="123.19"/>
 <instance part="Q14" gate="G$1" x="177.8" y="115.57" rot="MR0"/>
-<instance part="R10" gate="G$1" x="186.69" y="107.95" rot="R270"/>
-<instance part="R11" gate="G$1" x="186.69" y="91.44" rot="R270"/>
-<instance part="Q15" gate="G$1" x="184.15" y="77.47" rot="MR0"/>
+<instance part="R10" gate="G$1" x="186.69" y="109.22" rot="R270"/>
+<instance part="R11" gate="G$1" x="186.69" y="96.52" rot="R270"/>
+<instance part="Q15" gate="G$1" x="184.15" y="85.09" rot="MR0"/>
 <instance part="STANDOFF1" gate="G$1" x="132.08" y="15.24"/>
 <instance part="STANDOFF2" gate="G$1" x="125.73" y="8.89"/>
 <instance part="STANDOFF3" gate="G$1" x="132.08" y="8.89"/>
@@ -15438,7 +15473,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <pinref part="Q6" gate="G$1" pin="C"/>
 <wire x1="64.77" y1="97.79" x2="64.77" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="Q5" gate="G$1" pin="B"/>
-<wire x1="64.77" y1="91.44" x2="64.77" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="91.44" x2="64.77" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="91.44" x2="64.77" y2="91.44" width="0.1524" layer="91"/>
 <junction x="64.77" y="91.44"/>
 </segment>
@@ -15447,38 +15482,38 @@ This library includes USB, pin headers and sockets in different configurations (
 <segment>
 <pinref part="Q7" gate="G$1" pin="C"/>
 <pinref part="Q3" gate="G$1" pin="C"/>
-<wire x1="87.63" y1="86.36" x2="87.63" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="85.09" x2="87.63" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="Q11" gate="G$1" pin="C"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="87.63" y1="88.9" x2="87.63" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="74.93" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="86.36" x2="87.63" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="74.93" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="Q10" gate="G$1" pin="B"/>
-<wire x1="142.24" y1="88.9" x2="142.24" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="146.05" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
-<junction x="142.24" y="88.9"/>
-<wire x1="87.63" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
-<junction x="87.63" y="88.9"/>
-<junction x="142.24" y="88.9"/>
+<wire x1="142.24" y1="86.36" x2="142.24" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="146.05" y1="86.36" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
+<junction x="142.24" y="86.36"/>
+<wire x1="87.63" y1="86.36" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
+<junction x="87.63" y="86.36"/>
+<junction x="142.24" y="86.36"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="Q6" gate="G$1" pin="B"/>
 <pinref part="Q7" gate="G$1" pin="B"/>
-<wire x1="69.85" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="80.01" x2="76.2" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="Q5" gate="G$1" pin="E"/>
-<wire x1="76.2" y1="81.28" x2="82.55" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="86.36" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
-<junction x="76.2" y="81.28"/>
+<wire x1="76.2" y1="80.01" x2="82.55" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="86.36" x2="76.2" y2="80.01" width="0.1524" layer="91"/>
+<junction x="76.2" y="80.01"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="81.28" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="80.01" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OFFSET_N2" class="0">
 <segment>
 <pinref part="Q7" gate="G$1" pin="E"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="87.63" y1="76.2" x2="87.63" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="87.63" y1="74.93" x2="87.63" y2="69.85" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="69.85" x2="87.63" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="87.63" y1="69.85" x2="53.34" y2="69.85" width="0.1524" layer="91"/>
 <junction x="87.63" y="69.85"/>
@@ -15590,18 +15625,30 @@ This library includes USB, pin headers and sockets in different configurations (
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="Q10" gate="G$1" pin="E"/>
-<wire x1="151.13" y1="67.31" x2="151.13" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="67.31" x2="151.13" y2="77.47" width="0.1524" layer="91"/>
 <pinref part="Q12" gate="G$1" pin="B"/>
-<wire x1="151.13" y1="80.01" x2="151.13" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="156.21" y1="80.01" x2="151.13" y2="80.01" width="0.1524" layer="91"/>
-<junction x="151.13" y="80.01"/>
+<wire x1="151.13" y1="77.47" x2="151.13" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="77.47" x2="151.13" y2="77.47" width="0.1524" layer="91"/>
+<junction x="151.13" y="77.47"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="Q10" gate="G$1" pin="C"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="151.13" y1="93.98" x2="151.13" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="91.44" x2="151.13" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="Q16" gate="G$1" pin="E"/>
+<pinref part="Q12" gate="G$1" pin="C"/>
+<wire x1="151.13" y1="92.71" x2="151.13" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="102.87" x2="161.29" y2="92.71" width="0.1524" layer="91"/>
+<pinref part="Q15" gate="G$1" pin="B"/>
+<wire x1="161.29" y1="92.71" x2="161.29" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="85.09" x2="161.29" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="181.61" y1="85.09" x2="161.29" y2="85.09" width="0.1524" layer="91"/>
+<junction x="161.29" y="85.09"/>
+<wire x1="151.13" y1="92.71" x2="161.29" y2="92.71" width="0.1524" layer="91"/>
+<junction x="151.13" y="92.71"/>
+<junction x="161.29" y="92.71"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -15621,7 +15668,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <pinref part="Q12" gate="G$1" pin="E"/>
 <wire x1="161.29" y1="67.31" x2="161.29" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="Q11" gate="G$1" pin="B"/>
-<wire x1="161.29" y1="69.85" x2="161.29" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="69.85" x2="161.29" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="161.29" y1="69.85" x2="147.32" y2="69.85" width="0.1524" layer="91"/>
 <junction x="161.29" y="69.85"/>
 </segment>
@@ -15649,45 +15696,29 @@ This library includes USB, pin headers and sockets in different configurations (
 <junction x="161.29" y="123.19"/>
 </segment>
 </net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="Q16" gate="G$1" pin="E"/>
-<pinref part="Q12" gate="G$1" pin="C"/>
-<wire x1="161.29" y1="102.87" x2="161.29" y2="85.09" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="Q13" gate="G$1" pin="E"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="186.69" y1="118.11" x2="186.69" y2="115.57" width="0.1524" layer="91"/>
 <pinref part="Q14" gate="G$1" pin="B"/>
-<wire x1="186.69" y1="115.57" x2="186.69" y2="113.03" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="115.57" x2="186.69" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="115.57" x2="186.69" y2="115.57" width="0.1524" layer="91"/>
 <junction x="186.69" y="115.57"/>
 </segment>
 </net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="186.69" y1="102.87" x2="186.69" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="Q14" gate="G$1" pin="E"/>
-<wire x1="186.69" y1="101.6" x2="186.69" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="186.69" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="101.6" x2="175.26" y2="110.49" width="0.1524" layer="91"/>
-<junction x="186.69" y="101.6"/>
-</segment>
-</net>
 <net name="OUT" class="0">
 <segment>
-<pinref part="Q15" gate="G$1" pin="E"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="186.69" y1="82.55" x2="186.69" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="186.69" y1="85.09" x2="186.69" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="186.69" y1="85.09" x2="196.85" y2="85.09" width="0.1524" layer="91"/>
-<junction x="186.69" y="85.09"/>
-<label x="196.85" y="85.09" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
+<wire x1="186.69" y1="102.87" x2="198.12" y2="102.87" width="0.1524" layer="91"/>
+<label x="198.12" y="102.87" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="186.69" y1="104.14" x2="186.69" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="Q14" gate="G$1" pin="E"/>
+<wire x1="186.69" y1="102.87" x2="186.69" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="102.87" x2="175.26" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="102.87" x2="175.26" y2="110.49" width="0.1524" layer="91"/>
+<junction x="186.69" y="102.87"/>
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="1"/>
@@ -15734,7 +15765,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <wire x1="161.29" y1="57.15" x2="161.29" y2="54.61" width="0.1524" layer="91"/>
 <junction x="161.29" y="54.61"/>
 <pinref part="Q15" gate="G$1" pin="C"/>
-<wire x1="186.69" y1="72.39" x2="186.69" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="186.69" y1="80.01" x2="186.69" y2="54.61" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VCC-"/>
 <wire x1="64.77" y1="54.61" x2="59.69" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="59.69" y1="54.61" x2="59.69" y2="57.15" width="0.1524" layer="91"/>
@@ -15805,11 +15836,11 @@ This library includes USB, pin headers and sockets in different configurations (
 <segment>
 <pinref part="Q6" gate="G$1" pin="E"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="64.77" y1="76.2" x2="64.77" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="74.93" x2="64.77" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="74.93" x2="53.34" y2="74.93" width="0.1524" layer="91"/>
-<junction x="64.77" y="74.93"/>
-<label x="53.34" y="74.93" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
+<wire x1="64.77" y1="74.93" x2="64.77" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="73.66" x2="64.77" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
+<junction x="64.77" y="73.66"/>
+<label x="53.34" y="73.66" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J9" gate="G$1" pin="1"/>
@@ -15827,6 +15858,13 @@ This library includes USB, pin headers and sockets in different configurations (
 <pinref part="J9" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="161.29" x2="228.6" y2="161.29" width="0.1524" layer="91"/>
 <label x="228.6" y="161.29" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="Q15" gate="G$1" pin="E"/>
+<wire x1="186.69" y1="90.17" x2="186.69" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
