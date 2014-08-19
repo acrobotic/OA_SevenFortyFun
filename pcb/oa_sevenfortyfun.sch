@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -15147,11 +15147,11 @@ This library includes USB, pin headers and sockets in different configurations (
 <pad name="1" x="0" y="0" drill="4.2164" diameter="5.588" rot="R90"/>
 <circle x="0" y="0" radius="2.921" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2.921" width="0.127" layer="22"/>
-<polygon width="0.127" layer="1">
+<polygon width="0.2032" layer="1">
 <vertex x="0" y="2.794" curve="90"/>
 <vertex x="-2.794" y="0" curve="270"/>
 </polygon>
-<polygon width="0.127" layer="16">
+<polygon width="0.2032" layer="16">
 <vertex x="0" y="2.794" curve="90"/>
 <vertex x="-2.794" y="0" curve="270"/>
 </polygon>
@@ -15378,6 +15378,8 @@ This library includes USB, pin headers and sockets in different configurations (
 <wire x1="55.88" y1="142.24" x2="55.88" y2="50.8" width="0.4064" layer="94" style="dashdot"/>
 <wire x1="195.58" y1="142.24" x2="195.58" y2="50.8" width="0.4064" layer="94" style="dashdot"/>
 <text x="213.36" y="175.26" size="1.778" layer="94" font="vector" ratio="15">BREAKOUT</text>
+<text x="228.6" y="160.655" size="1.27" layer="94" font="vector" ratio="15">NC</text>
+<text x="76.835" y="166.37" size="1.27" layer="94" font="vector" ratio="15" rot="R90">NC</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -15848,18 +15850,6 @@ This library includes USB, pin headers and sockets in different configurations (
 <label x="208.28" y="161.29" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="NC" class="0">
-<segment>
-<pinref part="J8" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="158.75" x2="76.2" y2="166.37" width="0.1524" layer="91"/>
-<label x="76.2" y="166.37" size="1.27" layer="95" font="vector" ratio="15" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J9" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="161.29" x2="228.6" y2="161.29" width="0.1524" layer="91"/>
-<label x="228.6" y="161.29" size="1.27" layer="95" font="vector" ratio="15" xref="yes"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -15870,6 +15860,9 @@ This library includes USB, pin headers and sockets in different configurations (
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,76.2,158.75,J8,1,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
