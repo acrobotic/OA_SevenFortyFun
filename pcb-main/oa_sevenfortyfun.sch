@@ -15369,17 +15369,23 @@ This library includes USB, pin headers and sockets in different configurations (
 <sheet>
 <plain>
 <wire x1="99.06" y1="147.955" x2="99.06" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
-<wire x1="134.62" y1="147.955" x2="134.62" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
-<wire x1="168.91" y1="147.955" x2="168.91" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
+<wire x1="134.62" y1="147.955" x2="134.62" y2="98.425" width="0.4064" layer="94" style="dashdot"/>
+<wire x1="134.62" y1="98.425" x2="134.62" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
+<wire x1="168.91" y1="147.955" x2="168.91" y2="98.425" width="0.4064" layer="94" style="dashdot"/>
 <text x="60.96" y="150.495" size="1.778" layer="94" font="vector" ratio="15">DIFFERENTIAL AMPLIFIER</text>
-<text x="105.41" y="150.495" size="1.778" layer="94" font="vector" ratio="15">BIAS GENERATOR</text>
-<text x="142.24" y="150.495" size="1.778" layer="94" font="vector" ratio="15">GAIN STAGE</text>
-<text x="170.18" y="150.495" size="1.778" layer="94" font="vector" ratio="15">OUTPUT STAGE</text>
+<text x="105.41" y="150.495" size="1.778" layer="94" font="vector" ratio="15">CURRENT MIRROR</text>
+<text x="140.335" y="150.495" size="1.778" layer="94" font="vector" ratio="15">VOLTAGE SHIFT</text>
+<text x="173.355" y="150.495" size="1.778" layer="94" font="vector" ratio="15">OUTPUT STAGE</text>
+<wire x1="168.91" y1="98.425" x2="168.91" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
 <wire x1="55.88" y1="147.955" x2="55.88" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
 <wire x1="195.58" y1="147.955" x2="195.58" y2="56.515" width="0.4064" layer="94" style="dashdot"/>
 <text x="213.36" y="175.26" size="1.778" layer="94" font="vector" ratio="15">BREAKOUT</text>
 <text x="228.6" y="160.655" size="1.27" layer="94" font="vector" ratio="15">NC</text>
 <text x="76.835" y="166.37" size="1.27" layer="94" font="vector" ratio="15" rot="R90">NOT CONNECTED</text>
+<wire x1="163.195" y1="98.425" x2="168.91" y2="98.425" width="0.4064" layer="94" style="dashdot"/>
+<wire x1="134.62" y1="98.425" x2="140.335" y2="98.425" width="0.4064" layer="94" style="dashdot"/>
+<wire x1="143.51" y1="98.425" x2="149.86" y2="98.425" width="0.4064" layer="94" style="dashdot"/>
+<text x="143.51" y="57.15" size="1.778" layer="94" font="vector" ratio="15">GAIN STAGE</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
