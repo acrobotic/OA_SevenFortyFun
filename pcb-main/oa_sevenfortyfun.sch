@@ -15352,7 +15352,7 @@ This library includes USB, pin headers and sockets in different configurations (
 <parts>
 <part name="FRAME1" library="Ai_Miscellany" deviceset="FRAME-LETTER" device="">
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
-<attribute name="REV" value="1.0"/>
+<attribute name="REV" value="1.2"/>
 </part>
 <part name="U$3" library="Ai_Miscellany" deviceset="AI-LOGO" device="L" value="AI-LOGOL"/>
 <part name="Q2" library="Ai_DiscreteSemis" deviceset="BJT-NPN" device="" value="2N3904"/>
