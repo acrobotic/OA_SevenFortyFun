@@ -1,0 +1,1868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="Route13" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="no" active="no"/>
+<layer number="118" name="mVias" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="mtStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="no" active="no"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+</layers>
+<board>
+<plain>
+<wire x1="23.05" y1="17.78" x2="5.202959375" y2="17.78" width="0.2032" layer="20"/>
+<wire x1="5.202959375" y1="17.78" x2="4" y2="16.577040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="4" y1="16.577040625" x2="4" y2="1.27" width="0.2032" layer="20"/>
+<wire x1="4" y1="1.27" x2="5.27" y2="0" width="0.2032" layer="20" curve="90"/>
+<wire x1="5.27" y1="0" x2="23.05" y2="0" width="0.2032" layer="20"/>
+<wire x1="23.05" y1="0" x2="24.32" y2="1.27" width="0.2032" layer="20" curve="90"/>
+<wire x1="24.32" y1="1.27" x2="24.32" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="24.32" y1="16.51" x2="23.05" y2="17.78" width="0.2032" layer="20" curve="90"/>
+<text x="23.685" y="3.175" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="18.986" y="4.572" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="18.986" y="7.112" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="18.986" y="9.652" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="18.986" y="12.192" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="9.334" y="13.208" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="9.334" y="10.668" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="9.334" y="8.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="9.334" y="5.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="21.272" y="16.256" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="23.939" y="14.478" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="0" y1="0" x2="0" y2="91.7" width="0.0254" layer="20"/>
+<wire x1="0" y1="91.7" x2="3.3" y2="91.7" width="0.0254" layer="20"/>
+<wire x1="3.3" y1="91.7" x2="3.3" y2="0" width="0.0254" layer="20"/>
+<wire x1="3.3" y1="0" x2="0" y2="0" width="0.0254" layer="20"/>
+<wire x1="23.05" y1="36.26" x2="5.202959375" y2="36.26" width="0.2032" layer="20"/>
+<wire x1="5.202959375" y1="36.26" x2="4" y2="35.057040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="4" y1="35.057040625" x2="4" y2="19.75" width="0.2032" layer="20"/>
+<wire x1="4" y1="19.75" x2="5.27" y2="18.48" width="0.2032" layer="20" curve="90"/>
+<wire x1="5.27" y1="18.48" x2="23.05" y2="18.48" width="0.2032" layer="20"/>
+<wire x1="23.05" y1="18.48" x2="24.32" y2="19.75" width="0.2032" layer="20" curve="90"/>
+<wire x1="24.32" y1="19.75" x2="24.32" y2="34.99" width="0.2032" layer="20"/>
+<wire x1="24.32" y1="34.99" x2="23.05" y2="36.26" width="0.2032" layer="20" curve="90"/>
+<text x="23.685" y="21.655" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="18.986" y="23.052" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="18.986" y="25.592" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="18.986" y="28.132" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="18.986" y="30.672" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="9.334" y="31.688" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="9.334" y="29.148" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="9.334" y="26.608" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="9.334" y="24.068" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="21.272" y="34.736" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="23.939" y="32.958" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="23.05" y1="54.74" x2="5.202959375" y2="54.74" width="0.2032" layer="20"/>
+<wire x1="5.202959375" y1="54.74" x2="4" y2="53.537040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="4" y1="53.537040625" x2="4" y2="38.23" width="0.2032" layer="20"/>
+<wire x1="4" y1="38.23" x2="5.27" y2="36.96" width="0.2032" layer="20" curve="90"/>
+<wire x1="5.27" y1="36.96" x2="23.05" y2="36.96" width="0.2032" layer="20"/>
+<wire x1="23.05" y1="36.96" x2="24.32" y2="38.23" width="0.2032" layer="20" curve="90"/>
+<wire x1="24.32" y1="38.23" x2="24.32" y2="53.47" width="0.2032" layer="20"/>
+<wire x1="24.32" y1="53.47" x2="23.05" y2="54.74" width="0.2032" layer="20" curve="90"/>
+<text x="23.685" y="40.135" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="18.986" y="41.532" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="18.986" y="44.072" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="18.986" y="46.612" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="18.986" y="49.152" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="9.334" y="50.168" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="9.334" y="47.628" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="9.334" y="45.088" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="9.334" y="42.548" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="21.272" y="53.216" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="23.939" y="51.438" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="23.05" y1="73.22" x2="5.202959375" y2="73.22" width="0.2032" layer="20"/>
+<wire x1="5.202959375" y1="73.22" x2="4" y2="72.017040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="4" y1="72.017040625" x2="4" y2="56.71" width="0.2032" layer="20"/>
+<wire x1="4" y1="56.71" x2="5.27" y2="55.44" width="0.2032" layer="20" curve="90"/>
+<wire x1="5.27" y1="55.44" x2="23.05" y2="55.44" width="0.2032" layer="20"/>
+<wire x1="23.05" y1="55.44" x2="24.32" y2="56.71" width="0.2032" layer="20" curve="90"/>
+<wire x1="24.32" y1="56.71" x2="24.32" y2="71.95" width="0.2032" layer="20"/>
+<wire x1="24.32" y1="71.95" x2="23.05" y2="73.22" width="0.2032" layer="20" curve="90"/>
+<text x="23.685" y="58.615" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="18.986" y="60.012" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="18.986" y="62.552" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="18.986" y="65.092" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="18.986" y="67.632" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="9.334" y="68.648" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="9.334" y="66.108" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="9.334" y="63.568" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="9.334" y="61.028" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="21.272" y="71.696" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="23.939" y="69.918" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="23.05" y1="91.7" x2="5.202959375" y2="91.7" width="0.2032" layer="20"/>
+<wire x1="5.202959375" y1="91.7" x2="4" y2="90.497040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="4" y1="90.497040625" x2="4" y2="75.19" width="0.2032" layer="20"/>
+<wire x1="4" y1="75.19" x2="5.27" y2="73.92" width="0.2032" layer="20" curve="90"/>
+<wire x1="5.27" y1="73.92" x2="23.05" y2="73.92" width="0.2032" layer="20"/>
+<wire x1="23.05" y1="73.92" x2="24.32" y2="75.19" width="0.2032" layer="20" curve="90"/>
+<wire x1="24.32" y1="75.19" x2="24.32" y2="90.43" width="0.2032" layer="20"/>
+<wire x1="24.32" y1="90.43" x2="23.05" y2="91.7" width="0.2032" layer="20" curve="90"/>
+<text x="23.685" y="77.095" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="18.986" y="78.492" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="18.986" y="81.032" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="18.986" y="83.572" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="18.986" y="86.112" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="9.334" y="87.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="9.334" y="84.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="9.334" y="82.048" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="9.334" y="79.508" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="21.272" y="90.176" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="23.939" y="88.398" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="44.07" y1="17.78" x2="26.222959375" y2="17.78" width="0.2032" layer="20"/>
+<wire x1="26.222959375" y1="17.78" x2="25.02" y2="16.577040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="25.02" y1="16.577040625" x2="25.02" y2="1.27" width="0.2032" layer="20"/>
+<wire x1="25.02" y1="1.27" x2="26.29" y2="0" width="0.2032" layer="20" curve="90"/>
+<wire x1="26.29" y1="0" x2="44.07" y2="0" width="0.2032" layer="20"/>
+<wire x1="44.07" y1="0" x2="45.34" y2="1.27" width="0.2032" layer="20" curve="90"/>
+<wire x1="45.34" y1="1.27" x2="45.34" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="45.34" y1="16.51" x2="44.07" y2="17.78" width="0.2032" layer="20" curve="90"/>
+<text x="44.705" y="3.175" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="40.006" y="4.572" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="40.006" y="7.112" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="40.006" y="9.652" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="40.006" y="12.192" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="30.354" y="13.208" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="30.354" y="10.668" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="30.354" y="8.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="30.354" y="5.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="42.292" y="16.256" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="44.959" y="14.478" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="44.07" y1="36.26" x2="26.222959375" y2="36.26" width="0.2032" layer="20"/>
+<wire x1="26.222959375" y1="36.26" x2="25.02" y2="35.057040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="25.02" y1="35.057040625" x2="25.02" y2="19.75" width="0.2032" layer="20"/>
+<wire x1="25.02" y1="19.75" x2="26.29" y2="18.48" width="0.2032" layer="20" curve="90"/>
+<wire x1="26.29" y1="18.48" x2="44.07" y2="18.48" width="0.2032" layer="20"/>
+<wire x1="44.07" y1="18.48" x2="45.34" y2="19.75" width="0.2032" layer="20" curve="90"/>
+<wire x1="45.34" y1="19.75" x2="45.34" y2="34.99" width="0.2032" layer="20"/>
+<wire x1="45.34" y1="34.99" x2="44.07" y2="36.26" width="0.2032" layer="20" curve="90"/>
+<text x="44.705" y="21.655" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="40.006" y="23.052" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="40.006" y="25.592" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="40.006" y="28.132" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="40.006" y="30.672" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="30.354" y="31.688" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="30.354" y="29.148" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="30.354" y="26.608" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="30.354" y="24.068" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="42.292" y="34.736" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="44.959" y="32.958" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="44.07" y1="54.74" x2="26.222959375" y2="54.74" width="0.2032" layer="20"/>
+<wire x1="26.222959375" y1="54.74" x2="25.02" y2="53.537040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="25.02" y1="53.537040625" x2="25.02" y2="38.23" width="0.2032" layer="20"/>
+<wire x1="25.02" y1="38.23" x2="26.29" y2="36.96" width="0.2032" layer="20" curve="90"/>
+<wire x1="26.29" y1="36.96" x2="44.07" y2="36.96" width="0.2032" layer="20"/>
+<wire x1="44.07" y1="36.96" x2="45.34" y2="38.23" width="0.2032" layer="20" curve="90"/>
+<wire x1="45.34" y1="38.23" x2="45.34" y2="53.47" width="0.2032" layer="20"/>
+<wire x1="45.34" y1="53.47" x2="44.07" y2="54.74" width="0.2032" layer="20" curve="90"/>
+<text x="44.705" y="40.135" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="40.006" y="41.532" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="40.006" y="44.072" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="40.006" y="46.612" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="40.006" y="49.152" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="30.354" y="50.168" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="30.354" y="47.628" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="30.354" y="45.088" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="30.354" y="42.548" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="42.292" y="53.216" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="44.959" y="51.438" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="44.07" y1="73.22" x2="26.222959375" y2="73.22" width="0.2032" layer="20"/>
+<wire x1="26.222959375" y1="73.22" x2="25.02" y2="72.017040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="25.02" y1="72.017040625" x2="25.02" y2="56.71" width="0.2032" layer="20"/>
+<wire x1="25.02" y1="56.71" x2="26.29" y2="55.44" width="0.2032" layer="20" curve="90"/>
+<wire x1="26.29" y1="55.44" x2="44.07" y2="55.44" width="0.2032" layer="20"/>
+<wire x1="44.07" y1="55.44" x2="45.34" y2="56.71" width="0.2032" layer="20" curve="90"/>
+<wire x1="45.34" y1="56.71" x2="45.34" y2="71.95" width="0.2032" layer="20"/>
+<wire x1="45.34" y1="71.95" x2="44.07" y2="73.22" width="0.2032" layer="20" curve="90"/>
+<text x="44.705" y="58.615" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="40.006" y="60.012" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="40.006" y="62.552" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="40.006" y="65.092" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="40.006" y="67.632" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="30.354" y="68.648" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="30.354" y="66.108" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="30.354" y="63.568" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="30.354" y="61.028" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="42.292" y="71.696" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="44.959" y="69.918" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="44.07" y1="91.7" x2="26.222959375" y2="91.7" width="0.2032" layer="20"/>
+<wire x1="26.222959375" y1="91.7" x2="25.02" y2="90.497040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="25.02" y1="90.497040625" x2="25.02" y2="75.19" width="0.2032" layer="20"/>
+<wire x1="25.02" y1="75.19" x2="26.29" y2="73.92" width="0.2032" layer="20" curve="90"/>
+<wire x1="26.29" y1="73.92" x2="44.07" y2="73.92" width="0.2032" layer="20"/>
+<wire x1="44.07" y1="73.92" x2="45.34" y2="75.19" width="0.2032" layer="20" curve="90"/>
+<wire x1="45.34" y1="75.19" x2="45.34" y2="90.43" width="0.2032" layer="20"/>
+<wire x1="45.34" y1="90.43" x2="44.07" y2="91.7" width="0.2032" layer="20" curve="90"/>
+<text x="44.705" y="77.095" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="40.006" y="78.492" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="40.006" y="81.032" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="40.006" y="83.572" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="40.006" y="86.112" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="30.354" y="87.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="30.354" y="84.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="30.354" y="82.048" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="30.354" y="79.508" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="42.292" y="90.176" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="44.959" y="88.398" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="65.09" y1="17.78" x2="47.242959375" y2="17.78" width="0.2032" layer="20"/>
+<wire x1="47.242959375" y1="17.78" x2="46.04" y2="16.577040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="46.04" y1="16.577040625" x2="46.04" y2="1.27" width="0.2032" layer="20"/>
+<wire x1="46.04" y1="1.27" x2="47.31" y2="0" width="0.2032" layer="20" curve="90"/>
+<wire x1="47.31" y1="0" x2="65.09" y2="0" width="0.2032" layer="20"/>
+<wire x1="65.09" y1="0" x2="66.36" y2="1.27" width="0.2032" layer="20" curve="90"/>
+<wire x1="66.36" y1="1.27" x2="66.36" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="66.36" y1="16.51" x2="65.09" y2="17.78" width="0.2032" layer="20" curve="90"/>
+<text x="65.725" y="3.175" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="61.026" y="4.572" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="61.026" y="7.112" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="61.026" y="9.652" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="61.026" y="12.192" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="51.374" y="13.208" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="51.374" y="10.668" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="51.374" y="8.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="51.374" y="5.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="63.312" y="16.256" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="65.979" y="14.478" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="65.09" y1="36.26" x2="47.242959375" y2="36.26" width="0.2032" layer="20"/>
+<wire x1="47.242959375" y1="36.26" x2="46.04" y2="35.057040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="46.04" y1="35.057040625" x2="46.04" y2="19.75" width="0.2032" layer="20"/>
+<wire x1="46.04" y1="19.75" x2="47.31" y2="18.48" width="0.2032" layer="20" curve="90"/>
+<wire x1="47.31" y1="18.48" x2="65.09" y2="18.48" width="0.2032" layer="20"/>
+<wire x1="65.09" y1="18.48" x2="66.36" y2="19.75" width="0.2032" layer="20" curve="90"/>
+<wire x1="66.36" y1="19.75" x2="66.36" y2="34.99" width="0.2032" layer="20"/>
+<wire x1="66.36" y1="34.99" x2="65.09" y2="36.26" width="0.2032" layer="20" curve="90"/>
+<text x="65.725" y="21.655" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="61.026" y="23.052" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="61.026" y="25.592" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="61.026" y="28.132" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="61.026" y="30.672" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="51.374" y="31.688" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="51.374" y="29.148" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="51.374" y="26.608" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="51.374" y="24.068" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="63.312" y="34.736" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="65.979" y="32.958" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="65.09" y1="54.74" x2="47.242959375" y2="54.74" width="0.2032" layer="20"/>
+<wire x1="47.242959375" y1="54.74" x2="46.04" y2="53.537040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="46.04" y1="53.537040625" x2="46.04" y2="38.23" width="0.2032" layer="20"/>
+<wire x1="46.04" y1="38.23" x2="47.31" y2="36.96" width="0.2032" layer="20" curve="90"/>
+<wire x1="47.31" y1="36.96" x2="65.09" y2="36.96" width="0.2032" layer="20"/>
+<wire x1="65.09" y1="36.96" x2="66.36" y2="38.23" width="0.2032" layer="20" curve="90"/>
+<wire x1="66.36" y1="38.23" x2="66.36" y2="53.47" width="0.2032" layer="20"/>
+<wire x1="66.36" y1="53.47" x2="65.09" y2="54.74" width="0.2032" layer="20" curve="90"/>
+<text x="65.725" y="40.135" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="61.026" y="41.532" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="61.026" y="44.072" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="61.026" y="46.612" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="61.026" y="49.152" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="51.374" y="50.168" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="51.374" y="47.628" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="51.374" y="45.088" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="51.374" y="42.548" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="63.312" y="53.216" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="65.979" y="51.438" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="65.09" y1="73.22" x2="47.242959375" y2="73.22" width="0.2032" layer="20"/>
+<wire x1="47.242959375" y1="73.22" x2="46.04" y2="72.017040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="46.04" y1="72.017040625" x2="46.04" y2="56.71" width="0.2032" layer="20"/>
+<wire x1="46.04" y1="56.71" x2="47.31" y2="55.44" width="0.2032" layer="20" curve="90"/>
+<wire x1="47.31" y1="55.44" x2="65.09" y2="55.44" width="0.2032" layer="20"/>
+<wire x1="65.09" y1="55.44" x2="66.36" y2="56.71" width="0.2032" layer="20" curve="90"/>
+<wire x1="66.36" y1="56.71" x2="66.36" y2="71.95" width="0.2032" layer="20"/>
+<wire x1="66.36" y1="71.95" x2="65.09" y2="73.22" width="0.2032" layer="20" curve="90"/>
+<text x="65.725" y="58.615" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="61.026" y="60.012" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="61.026" y="62.552" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="61.026" y="65.092" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="61.026" y="67.632" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="51.374" y="68.648" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="51.374" y="66.108" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="51.374" y="63.568" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="51.374" y="61.028" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="63.312" y="71.696" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="65.979" y="69.918" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="65.09" y1="91.7" x2="47.242959375" y2="91.7" width="0.2032" layer="20"/>
+<wire x1="47.242959375" y1="91.7" x2="46.04" y2="90.497040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="46.04" y1="90.497040625" x2="46.04" y2="75.19" width="0.2032" layer="20"/>
+<wire x1="46.04" y1="75.19" x2="47.31" y2="73.92" width="0.2032" layer="20" curve="90"/>
+<wire x1="47.31" y1="73.92" x2="65.09" y2="73.92" width="0.2032" layer="20"/>
+<wire x1="65.09" y1="73.92" x2="66.36" y2="75.19" width="0.2032" layer="20" curve="90"/>
+<wire x1="66.36" y1="75.19" x2="66.36" y2="90.43" width="0.2032" layer="20"/>
+<wire x1="66.36" y1="90.43" x2="65.09" y2="91.7" width="0.2032" layer="20" curve="90"/>
+<text x="65.725" y="77.095" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="61.026" y="78.492" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="61.026" y="81.032" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="61.026" y="83.572" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="61.026" y="86.112" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="51.374" y="87.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="51.374" y="84.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="51.374" y="82.048" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="51.374" y="79.508" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="63.312" y="90.176" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="65.979" y="88.398" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="86.11" y1="17.78" x2="68.262959375" y2="17.78" width="0.2032" layer="20"/>
+<wire x1="68.262959375" y1="17.78" x2="67.06" y2="16.577040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="67.06" y1="16.577040625" x2="67.06" y2="1.27" width="0.2032" layer="20"/>
+<wire x1="67.06" y1="1.27" x2="68.33" y2="0" width="0.2032" layer="20" curve="90"/>
+<wire x1="68.33" y1="0" x2="86.11" y2="0" width="0.2032" layer="20"/>
+<wire x1="86.11" y1="0" x2="87.38" y2="1.27" width="0.2032" layer="20" curve="90"/>
+<wire x1="87.38" y1="1.27" x2="87.38" y2="16.51" width="0.2032" layer="20"/>
+<wire x1="87.38" y1="16.51" x2="86.11" y2="17.78" width="0.2032" layer="20" curve="90"/>
+<text x="86.745" y="3.175" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="82.046" y="4.572" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="82.046" y="7.112" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="82.046" y="9.652" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="82.046" y="12.192" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="72.394" y="13.208" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="72.394" y="10.668" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="72.394" y="8.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="72.394" y="5.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="84.332" y="16.256" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="86.999" y="14.478" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="86.11" y1="36.26" x2="68.262959375" y2="36.26" width="0.2032" layer="20"/>
+<wire x1="68.262959375" y1="36.26" x2="67.06" y2="35.057040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="67.06" y1="35.057040625" x2="67.06" y2="19.75" width="0.2032" layer="20"/>
+<wire x1="67.06" y1="19.75" x2="68.33" y2="18.48" width="0.2032" layer="20" curve="90"/>
+<wire x1="68.33" y1="18.48" x2="86.11" y2="18.48" width="0.2032" layer="20"/>
+<wire x1="86.11" y1="18.48" x2="87.38" y2="19.75" width="0.2032" layer="20" curve="90"/>
+<wire x1="87.38" y1="19.75" x2="87.38" y2="34.99" width="0.2032" layer="20"/>
+<wire x1="87.38" y1="34.99" x2="86.11" y2="36.26" width="0.2032" layer="20" curve="90"/>
+<text x="86.745" y="21.655" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="82.046" y="23.052" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="82.046" y="25.592" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="82.046" y="28.132" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="82.046" y="30.672" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="72.394" y="31.688" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="72.394" y="29.148" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="72.394" y="26.608" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="72.394" y="24.068" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="84.332" y="34.736" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="86.999" y="32.958" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="86.11" y1="54.74" x2="68.262959375" y2="54.74" width="0.2032" layer="20"/>
+<wire x1="68.262959375" y1="54.74" x2="67.06" y2="53.537040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="67.06" y1="53.537040625" x2="67.06" y2="38.23" width="0.2032" layer="20"/>
+<wire x1="67.06" y1="38.23" x2="68.33" y2="36.96" width="0.2032" layer="20" curve="90"/>
+<wire x1="68.33" y1="36.96" x2="86.11" y2="36.96" width="0.2032" layer="20"/>
+<wire x1="86.11" y1="36.96" x2="87.38" y2="38.23" width="0.2032" layer="20" curve="90"/>
+<wire x1="87.38" y1="38.23" x2="87.38" y2="53.47" width="0.2032" layer="20"/>
+<wire x1="87.38" y1="53.47" x2="86.11" y2="54.74" width="0.2032" layer="20" curve="90"/>
+<text x="86.745" y="40.135" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="82.046" y="41.532" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="82.046" y="44.072" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="82.046" y="46.612" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="82.046" y="49.152" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="72.394" y="50.168" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="72.394" y="47.628" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="72.394" y="45.088" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="72.394" y="42.548" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="84.332" y="53.216" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="86.999" y="51.438" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="86.11" y1="73.22" x2="68.262959375" y2="73.22" width="0.2032" layer="20"/>
+<wire x1="68.262959375" y1="73.22" x2="67.06" y2="72.017040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="67.06" y1="72.017040625" x2="67.06" y2="56.71" width="0.2032" layer="20"/>
+<wire x1="67.06" y1="56.71" x2="68.33" y2="55.44" width="0.2032" layer="20" curve="90"/>
+<wire x1="68.33" y1="55.44" x2="86.11" y2="55.44" width="0.2032" layer="20"/>
+<wire x1="86.11" y1="55.44" x2="87.38" y2="56.71" width="0.2032" layer="20" curve="90"/>
+<wire x1="87.38" y1="56.71" x2="87.38" y2="71.95" width="0.2032" layer="20"/>
+<wire x1="87.38" y1="71.95" x2="86.11" y2="73.22" width="0.2032" layer="20" curve="90"/>
+<text x="86.745" y="58.615" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="82.046" y="60.012" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="82.046" y="62.552" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="82.046" y="65.092" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="82.046" y="67.632" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="72.394" y="68.648" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="72.394" y="66.108" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="72.394" y="63.568" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="72.394" y="61.028" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="84.332" y="71.696" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="86.999" y="69.918" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="86.11" y1="91.7" x2="68.262959375" y2="91.7" width="0.2032" layer="20"/>
+<wire x1="68.262959375" y1="91.7" x2="67.06" y2="90.497040625" width="0.2032" layer="20" curve="90"/>
+<wire x1="67.06" y1="90.497040625" x2="67.06" y2="75.19" width="0.2032" layer="20"/>
+<wire x1="67.06" y1="75.19" x2="68.33" y2="73.92" width="0.2032" layer="20" curve="90"/>
+<wire x1="68.33" y1="73.92" x2="86.11" y2="73.92" width="0.2032" layer="20"/>
+<wire x1="86.11" y1="73.92" x2="87.38" y2="75.19" width="0.2032" layer="20" curve="90"/>
+<wire x1="87.38" y1="75.19" x2="87.38" y2="90.43" width="0.2032" layer="20"/>
+<wire x1="87.38" y1="90.43" x2="86.11" y2="91.7" width="0.2032" layer="20" curve="90"/>
+<text x="86.745" y="77.095" size="1.778" layer="21" font="vector" ratio="15" rot="R180">1</text>
+<text x="82.046" y="78.492" size="1.016" layer="21" font="vector" ratio="15">OFF</text>
+<text x="82.046" y="81.032" size="1.016" layer="21" font="vector" ratio="15">IN-</text>
+<text x="82.046" y="83.572" size="1.016" layer="21" font="vector" ratio="15">IN+</text>
+<text x="82.046" y="86.112" size="1.016" layer="21" font="vector" ratio="15">V-</text>
+<text x="72.394" y="87.128" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OFF</text>
+<text x="72.394" y="84.588" size="1.016" layer="21" font="vector" ratio="15" rot="R180">OUT</text>
+<text x="72.394" y="82.048" size="1.016" layer="21" font="vector" ratio="15" rot="R180">V+</text>
+<text x="72.394" y="79.508" size="1.016" layer="21" font="vector" ratio="15" rot="R180">NC</text>
+<text x="84.332" y="90.176" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">www.acrobotic.com</text>
+<text x="86.999" y="88.398" size="0.889" layer="22" font="vector" ratio="15" rot="MR0">Design by Shane Petcavich</text>
+<wire x1="88.08" y1="0" x2="88.08" y2="91.7" width="0.0254" layer="20"/>
+<wire x1="88.08" y1="91.7" x2="91.38" y2="91.7" width="0.0254" layer="20"/>
+<wire x1="91.38" y1="91.7" x2="91.38" y2="0" width="0.0254" layer="20"/>
+<wire x1="91.38" y1="0" x2="88.08" y2="0" width="0.0254" layer="20"/>
+</plain>
+<libraries>
+<library name="Ai_Miscellany">
+<description>&lt;h3&gt;Ai Miscellany&lt;/h3&gt;
+&lt;p&gt;
+This library includes schematic frames, logos, and other non-electrical/-mechanical items.
+&lt;/p&gt;</description>
+<packages>
+<package name="AI-LOGO-XS">
+<polygon width="0.0254" layer="21">
+<vertex x="1.275078125" y="-0.005078125"/>
+<vertex x="1.275078125" y="0.69088125"/>
+<vertex x="1.402078125" y="0.751840625"/>
+<vertex x="1.402078125" y="1.4732"/>
+<vertex x="1.280159375" y="1.5748"/>
+<vertex x="1.203959375" y="1.5748"/>
+<vertex x="1.203959375" y="1.874521875"/>
+<vertex x="1.148078125" y="1.9304"/>
+<vertex x="0.8280375" y="1.9304"/>
+<vertex x="0.75691875" y="1.864359375"/>
+<vertex x="0.75691875" y="1.63068125"/>
+<vertex x="0.7010375" y="1.63068125"/>
+<vertex x="0.701040625" y="1.5748"/>
+<vertex x="0.75691875" y="1.5748"/>
+<vertex x="1.198878125" y="1.574803125"/>
+<vertex x="1.198878125" y="1.615440625"/>
+<vertex x="0.690878125" y="1.615440625"/>
+<vertex x="0.690878125" y="1.569721875"/>
+<vertex x="0.568959375" y="1.468121875"/>
+<vertex x="0.568959375" y="0.751840625"/>
+<vertex x="0.695959375" y="0.6858"/>
+<vertex x="0.695959375" y="0"/>
+<vertex x="0" y="0"/>
+<vertex x="0" y="2.357121875"/>
+<vertex x="1.9710375" y="2.357121875"/>
+<vertex x="1.9710375" y="-0.005078125"/>
+</polygon>
+</package>
+</packages>
+</library>
+<library name="Ai_Connectors">
+<description>&lt;h3&gt;Ai Connectors&lt;/h3&gt;
+&lt;p&gt;
+This library includes USB, pin headers and sockets in different configurations (e.g., pad shapes, with or without silkscreen), SD cards, screw terminals, etc.
+&lt;/p&gt;</description>
+<packages>
+<package name="2X04-SHR">
+<wire x1="1.27" y1="-4.425" x2="1.27" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-3.302" x2="-1.27" y2="-3.302" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-3.302" x2="-1.27" y2="-4.425" width="0.2032" layer="21"/>
+<pad name="5" x="1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-3.81" y="-1.27" drill="1.016" diameter="1.8796" first="yes"/>
+<pad name="3" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<wire x1="-8.81" y1="-4.425" x2="-8.81" y2="4.425" width="0.2032" layer="21"/>
+<wire x1="-8.81" y1="4.425" x2="8.81" y2="4.425" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-4.425" x2="-8.81" y2="-4.425" width="0.2032" layer="21"/>
+<text x="-8.89" y="4.826" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<wire x1="8.81" y1="4.425" x2="8.81" y2="-4.425" width="0.2032" layer="21"/>
+<pad name="6" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<wire x1="8.81" y1="-4.425" x2="1.27" y2="-4.425" width="0.2032" layer="21"/>
+<text x="-6.096" y="-2.032" size="1.27" layer="25" font="vector" ratio="15">1</text>
+</package>
+<package name="1X04-NOFIRST">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="1X04-NOSILK">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="signal" width="0.254" drill="0">
+</class>
+<class number="1" name="power" width="0.3048" drill="0">
+</class>
+</classes>
+<designrules name="ai_2layer">
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="8mil"/>
+<param name="mdDrill" value="8mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="12mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="12mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="0"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="20mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="|"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="-"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="U$3" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="5.778" y="0.762"/>
+<element name="J9" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="14.16" y="8.89" smashed="yes" rot="R90"/>
+<element name="J1" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="23.05" y="8.89" smashed="yes" rot="R90"/>
+<element name="J2" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="5.27" y="8.89" smashed="yes" rot="R90"/>
+<element name="U$1" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="5.778" y="19.242"/>
+<element name="J3" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="14.16" y="27.37" smashed="yes" rot="R90"/>
+<element name="J4" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="23.05" y="27.37" smashed="yes" rot="R90"/>
+<element name="J5" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="5.27" y="27.37" smashed="yes" rot="R90"/>
+<element name="U$2" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="5.778" y="37.722"/>
+<element name="J6" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="14.16" y="45.85" smashed="yes" rot="R90"/>
+<element name="J7" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="23.05" y="45.85" smashed="yes" rot="R90"/>
+<element name="J8" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="5.27" y="45.85" smashed="yes" rot="R90"/>
+<element name="U$4" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="5.778" y="56.202"/>
+<element name="J10" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="14.16" y="64.33" smashed="yes" rot="R90"/>
+<element name="J11" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="23.05" y="64.33" smashed="yes" rot="R90"/>
+<element name="J12" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="5.27" y="64.33" smashed="yes" rot="R90"/>
+<element name="U$5" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="5.778" y="74.682"/>
+<element name="J13" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="14.16" y="82.81" smashed="yes" rot="R90"/>
+<element name="J14" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="23.05" y="82.81" smashed="yes" rot="R90"/>
+<element name="J15" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="5.27" y="82.81" smashed="yes" rot="R90"/>
+<element name="U$6" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="26.798" y="0.762"/>
+<element name="J16" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="35.18" y="8.89" smashed="yes" rot="R90"/>
+<element name="J17" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="44.07" y="8.89" smashed="yes" rot="R90"/>
+<element name="J18" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="26.29" y="8.89" smashed="yes" rot="R90"/>
+<element name="U$7" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="26.798" y="19.242"/>
+<element name="J19" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="35.18" y="27.37" smashed="yes" rot="R90"/>
+<element name="J20" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="44.07" y="27.37" smashed="yes" rot="R90"/>
+<element name="J21" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="26.29" y="27.37" smashed="yes" rot="R90"/>
+<element name="U$8" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="26.798" y="37.722"/>
+<element name="J22" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="35.18" y="45.85" smashed="yes" rot="R90"/>
+<element name="J23" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="44.07" y="45.85" smashed="yes" rot="R90"/>
+<element name="J24" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="26.29" y="45.85" smashed="yes" rot="R90"/>
+<element name="U$9" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="26.798" y="56.202"/>
+<element name="J25" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="35.18" y="64.33" smashed="yes" rot="R90"/>
+<element name="J26" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="44.07" y="64.33" smashed="yes" rot="R90"/>
+<element name="J27" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="26.29" y="64.33" smashed="yes" rot="R90"/>
+<element name="U$10" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="26.798" y="74.682"/>
+<element name="J28" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="35.18" y="82.81" smashed="yes" rot="R90"/>
+<element name="J29" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="44.07" y="82.81" smashed="yes" rot="R90"/>
+<element name="J30" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="26.29" y="82.81" smashed="yes" rot="R90"/>
+<element name="U$11" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="47.818" y="0.762"/>
+<element name="J31" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="56.2" y="8.89" smashed="yes" rot="R90"/>
+<element name="J32" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="65.09" y="8.89" smashed="yes" rot="R90"/>
+<element name="J33" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="47.31" y="8.89" smashed="yes" rot="R90"/>
+<element name="U$12" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="47.818" y="19.242"/>
+<element name="J34" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="56.2" y="27.37" smashed="yes" rot="R90"/>
+<element name="J35" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="65.09" y="27.37" smashed="yes" rot="R90"/>
+<element name="J36" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="47.31" y="27.37" smashed="yes" rot="R90"/>
+<element name="U$13" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="47.818" y="37.722"/>
+<element name="J37" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="56.2" y="45.85" smashed="yes" rot="R90"/>
+<element name="J38" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="65.09" y="45.85" smashed="yes" rot="R90"/>
+<element name="J39" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="47.31" y="45.85" smashed="yes" rot="R90"/>
+<element name="U$14" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="47.818" y="56.202"/>
+<element name="J40" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="56.2" y="64.33" smashed="yes" rot="R90"/>
+<element name="J41" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="65.09" y="64.33" smashed="yes" rot="R90"/>
+<element name="J42" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="47.31" y="64.33" smashed="yes" rot="R90"/>
+<element name="U$15" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="47.818" y="74.682"/>
+<element name="J43" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="56.2" y="82.81" smashed="yes" rot="R90"/>
+<element name="J44" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="65.09" y="82.81" smashed="yes" rot="R90"/>
+<element name="J45" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="47.31" y="82.81" smashed="yes" rot="R90"/>
+<element name="U$16" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="68.838" y="0.762"/>
+<element name="J46" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="77.22" y="8.89" smashed="yes" rot="R90"/>
+<element name="J47" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="86.11" y="8.89" smashed="yes" rot="R90"/>
+<element name="J48" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="68.33" y="8.89" smashed="yes" rot="R90"/>
+<element name="U$17" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="68.838" y="19.242"/>
+<element name="J49" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="77.22" y="27.37" smashed="yes" rot="R90"/>
+<element name="J50" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="86.11" y="27.37" smashed="yes" rot="R90"/>
+<element name="J51" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="68.33" y="27.37" smashed="yes" rot="R90"/>
+<element name="U$18" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="68.838" y="37.722"/>
+<element name="J52" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="77.22" y="45.85" smashed="yes" rot="R90"/>
+<element name="J53" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="86.11" y="45.85" smashed="yes" rot="R90"/>
+<element name="J54" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="68.33" y="45.85" smashed="yes" rot="R90"/>
+<element name="U$19" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="68.838" y="56.202"/>
+<element name="J55" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="77.22" y="64.33" smashed="yes" rot="R90"/>
+<element name="J56" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="86.11" y="64.33" smashed="yes" rot="R90"/>
+<element name="J57" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="68.33" y="64.33" smashed="yes" rot="R90"/>
+<element name="U$20" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="68.838" y="74.682"/>
+<element name="J58" library="Ai_Connectors" package="2X04-SHR" value="2X04SHR" x="77.22" y="82.81" smashed="yes" rot="R90"/>
+<element name="J59" library="Ai_Connectors" package="1X04-NOSILK" value="1X04NOSILK" x="86.11" y="82.81" smashed="yes" rot="R90"/>
+<element name="J60" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="68.33" y="82.81" smashed="yes" rot="R90"/>
+</elements>
+<signals>
+<signal name="3/RS2">
+</signal>
+<signal name="OFFSET_NULL2">
+<contactref element="J9" pad="8"/>
+<contactref element="J2" pad="4"/>
+<wire x1="12.89" y1="12.7" x2="5.27" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)">
+<contactref element="J9" pad="5"/>
+<contactref element="J1" pad="3"/>
+<wire x1="15.43" y1="10.16" x2="23.05" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)">
+<contactref element="J9" pad="3"/>
+<contactref element="J1" pad="2"/>
+<wire x1="15.43" y1="7.62" x2="23.05" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT">
+<contactref element="J9" pad="6"/>
+<contactref element="J2" pad="3"/>
+<wire x1="12.89" y1="10.16" x2="5.27" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-">
+<contactref element="J9" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="4" y="17.78"/>
+<vertex x="24.32" y="17.78"/>
+<vertex x="24.32" y="0"/>
+<vertex x="4" y="0"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="4" y="0"/>
+<vertex x="4" y="17.78"/>
+<vertex x="24.32" y="17.78"/>
+<vertex x="24.32" y="0"/>
+</polygon>
+<contactref element="J1" pad="4"/>
+<wire x1="15.43" y1="12.7" x2="23.05" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+">
+<contactref element="J9" pad="4"/>
+<contactref element="J2" pad="2"/>
+<wire x1="12.89" y1="7.62" x2="5.27" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL1">
+<contactref element="J9" pad="1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="15.43" y1="5.08" x2="23.05" y2="5.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL3">
+<contactref element="J3" pad="8"/>
+<contactref element="J5" pad="4"/>
+<wire x1="12.89" y1="31.18" x2="5.27" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)1">
+<contactref element="J3" pad="5"/>
+<contactref element="J4" pad="3"/>
+<wire x1="15.43" y1="28.64" x2="23.05" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)1">
+<contactref element="J3" pad="3"/>
+<contactref element="J4" pad="2"/>
+<wire x1="15.43" y1="26.1" x2="23.05" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT1">
+<contactref element="J3" pad="6"/>
+<contactref element="J5" pad="3"/>
+<wire x1="12.89" y1="28.64" x2="5.27" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-1">
+<contactref element="J3" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="4" y="36.26"/>
+<vertex x="24.32" y="36.26"/>
+<vertex x="24.32" y="18.48"/>
+<vertex x="4" y="18.48"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="4" y="18.48"/>
+<vertex x="4" y="36.26"/>
+<vertex x="24.32" y="36.26"/>
+<vertex x="24.32" y="18.48"/>
+</polygon>
+<contactref element="J4" pad="4"/>
+<wire x1="15.43" y1="31.18" x2="23.05" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+1">
+<contactref element="J3" pad="4"/>
+<contactref element="J5" pad="2"/>
+<wire x1="12.89" y1="26.1" x2="5.27" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL4">
+<contactref element="J3" pad="1"/>
+<contactref element="J4" pad="1"/>
+<wire x1="15.43" y1="23.56" x2="23.05" y2="23.56" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL5">
+<contactref element="J6" pad="8"/>
+<contactref element="J8" pad="4"/>
+<wire x1="12.89" y1="49.66" x2="5.27" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)2">
+<contactref element="J6" pad="5"/>
+<contactref element="J7" pad="3"/>
+<wire x1="15.43" y1="47.12" x2="23.05" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)2">
+<contactref element="J6" pad="3"/>
+<contactref element="J7" pad="2"/>
+<wire x1="15.43" y1="44.58" x2="23.05" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT2">
+<contactref element="J6" pad="6"/>
+<contactref element="J8" pad="3"/>
+<wire x1="12.89" y1="47.12" x2="5.27" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-2">
+<contactref element="J6" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="4" y="54.74"/>
+<vertex x="24.32" y="54.74"/>
+<vertex x="24.32" y="36.96"/>
+<vertex x="4" y="36.96"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="4" y="36.96"/>
+<vertex x="4" y="54.74"/>
+<vertex x="24.32" y="54.74"/>
+<vertex x="24.32" y="36.96"/>
+</polygon>
+<contactref element="J7" pad="4"/>
+<wire x1="15.43" y1="49.66" x2="23.05" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+2">
+<contactref element="J6" pad="4"/>
+<contactref element="J8" pad="2"/>
+<wire x1="12.89" y1="44.58" x2="5.27" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL6">
+<contactref element="J6" pad="1"/>
+<contactref element="J7" pad="1"/>
+<wire x1="15.43" y1="42.04" x2="23.05" y2="42.04" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL7">
+<contactref element="J10" pad="8"/>
+<contactref element="J12" pad="4"/>
+<wire x1="12.89" y1="68.14" x2="5.27" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)3">
+<contactref element="J10" pad="5"/>
+<contactref element="J11" pad="3"/>
+<wire x1="15.43" y1="65.6" x2="23.05" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)3">
+<contactref element="J10" pad="3"/>
+<contactref element="J11" pad="2"/>
+<wire x1="15.43" y1="63.06" x2="23.05" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT3">
+<contactref element="J10" pad="6"/>
+<contactref element="J12" pad="3"/>
+<wire x1="12.89" y1="65.6" x2="5.27" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-3">
+<contactref element="J10" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="4" y="73.22"/>
+<vertex x="24.32" y="73.22"/>
+<vertex x="24.32" y="55.44"/>
+<vertex x="4" y="55.44"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="4" y="55.44"/>
+<vertex x="4" y="73.22"/>
+<vertex x="24.32" y="73.22"/>
+<vertex x="24.32" y="55.44"/>
+</polygon>
+<contactref element="J11" pad="4"/>
+<wire x1="15.43" y1="68.14" x2="23.05" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+3">
+<contactref element="J10" pad="4"/>
+<contactref element="J12" pad="2"/>
+<wire x1="12.89" y1="63.06" x2="5.27" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL8">
+<contactref element="J10" pad="1"/>
+<contactref element="J11" pad="1"/>
+<wire x1="15.43" y1="60.52" x2="23.05" y2="60.52" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL9">
+<contactref element="J13" pad="8"/>
+<contactref element="J15" pad="4"/>
+<wire x1="12.89" y1="86.62" x2="5.27" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)4">
+<contactref element="J13" pad="5"/>
+<contactref element="J14" pad="3"/>
+<wire x1="15.43" y1="84.08" x2="23.05" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)4">
+<contactref element="J13" pad="3"/>
+<contactref element="J14" pad="2"/>
+<wire x1="15.43" y1="81.54" x2="23.05" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT4">
+<contactref element="J13" pad="6"/>
+<contactref element="J15" pad="3"/>
+<wire x1="12.89" y1="84.08" x2="5.27" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-4">
+<contactref element="J13" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="4" y="91.7"/>
+<vertex x="24.32" y="91.7"/>
+<vertex x="24.32" y="73.92"/>
+<vertex x="4" y="73.92"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="4" y="73.92"/>
+<vertex x="4" y="91.7"/>
+<vertex x="24.32" y="91.7"/>
+<vertex x="24.32" y="73.92"/>
+</polygon>
+<contactref element="J14" pad="4"/>
+<wire x1="15.43" y1="86.62" x2="23.05" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+4">
+<contactref element="J13" pad="4"/>
+<contactref element="J15" pad="2"/>
+<wire x1="12.89" y1="81.54" x2="5.27" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL10">
+<contactref element="J13" pad="1"/>
+<contactref element="J14" pad="1"/>
+<wire x1="15.43" y1="79" x2="23.05" y2="79" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL11">
+<contactref element="J16" pad="8"/>
+<contactref element="J18" pad="4"/>
+<wire x1="33.91" y1="12.7" x2="26.29" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)5">
+<contactref element="J16" pad="5"/>
+<contactref element="J17" pad="3"/>
+<wire x1="36.45" y1="10.16" x2="44.07" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)5">
+<contactref element="J16" pad="3"/>
+<contactref element="J17" pad="2"/>
+<wire x1="36.45" y1="7.62" x2="44.07" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT5">
+<contactref element="J16" pad="6"/>
+<contactref element="J18" pad="3"/>
+<wire x1="33.91" y1="10.16" x2="26.29" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-5">
+<contactref element="J16" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="25.02" y="17.78"/>
+<vertex x="45.34" y="17.78"/>
+<vertex x="45.34" y="0"/>
+<vertex x="25.02" y="0"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="25.02" y="0"/>
+<vertex x="25.02" y="17.78"/>
+<vertex x="45.34" y="17.78"/>
+<vertex x="45.34" y="0"/>
+</polygon>
+<contactref element="J17" pad="4"/>
+<wire x1="36.45" y1="12.7" x2="44.07" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+5">
+<contactref element="J16" pad="4"/>
+<contactref element="J18" pad="2"/>
+<wire x1="33.91" y1="7.62" x2="26.29" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL12">
+<contactref element="J16" pad="1"/>
+<contactref element="J17" pad="1"/>
+<wire x1="36.45" y1="5.08" x2="44.07" y2="5.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL13">
+<contactref element="J19" pad="8"/>
+<contactref element="J21" pad="4"/>
+<wire x1="33.91" y1="31.18" x2="26.29" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)6">
+<contactref element="J19" pad="5"/>
+<contactref element="J20" pad="3"/>
+<wire x1="36.45" y1="28.64" x2="44.07" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)6">
+<contactref element="J19" pad="3"/>
+<contactref element="J20" pad="2"/>
+<wire x1="36.45" y1="26.1" x2="44.07" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT6">
+<contactref element="J19" pad="6"/>
+<contactref element="J21" pad="3"/>
+<wire x1="33.91" y1="28.64" x2="26.29" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-6">
+<contactref element="J19" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="25.02" y="36.26"/>
+<vertex x="45.34" y="36.26"/>
+<vertex x="45.34" y="18.48"/>
+<vertex x="25.02" y="18.48"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="25.02" y="18.48"/>
+<vertex x="25.02" y="36.26"/>
+<vertex x="45.34" y="36.26"/>
+<vertex x="45.34" y="18.48"/>
+</polygon>
+<contactref element="J20" pad="4"/>
+<wire x1="36.45" y1="31.18" x2="44.07" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+6">
+<contactref element="J19" pad="4"/>
+<contactref element="J21" pad="2"/>
+<wire x1="33.91" y1="26.1" x2="26.29" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL14">
+<contactref element="J19" pad="1"/>
+<contactref element="J20" pad="1"/>
+<wire x1="36.45" y1="23.56" x2="44.07" y2="23.56" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL15">
+<contactref element="J22" pad="8"/>
+<contactref element="J24" pad="4"/>
+<wire x1="33.91" y1="49.66" x2="26.29" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)7">
+<contactref element="J22" pad="5"/>
+<contactref element="J23" pad="3"/>
+<wire x1="36.45" y1="47.12" x2="44.07" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)7">
+<contactref element="J22" pad="3"/>
+<contactref element="J23" pad="2"/>
+<wire x1="36.45" y1="44.58" x2="44.07" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT7">
+<contactref element="J22" pad="6"/>
+<contactref element="J24" pad="3"/>
+<wire x1="33.91" y1="47.12" x2="26.29" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-7">
+<contactref element="J22" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="25.02" y="54.74"/>
+<vertex x="45.34" y="54.74"/>
+<vertex x="45.34" y="36.96"/>
+<vertex x="25.02" y="36.96"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="25.02" y="36.96"/>
+<vertex x="25.02" y="54.74"/>
+<vertex x="45.34" y="54.74"/>
+<vertex x="45.34" y="36.96"/>
+</polygon>
+<contactref element="J23" pad="4"/>
+<wire x1="36.45" y1="49.66" x2="44.07" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+7">
+<contactref element="J22" pad="4"/>
+<contactref element="J24" pad="2"/>
+<wire x1="33.91" y1="44.58" x2="26.29" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL16">
+<contactref element="J22" pad="1"/>
+<contactref element="J23" pad="1"/>
+<wire x1="36.45" y1="42.04" x2="44.07" y2="42.04" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL17">
+<contactref element="J25" pad="8"/>
+<contactref element="J27" pad="4"/>
+<wire x1="33.91" y1="68.14" x2="26.29" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)8">
+<contactref element="J25" pad="5"/>
+<contactref element="J26" pad="3"/>
+<wire x1="36.45" y1="65.6" x2="44.07" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)8">
+<contactref element="J25" pad="3"/>
+<contactref element="J26" pad="2"/>
+<wire x1="36.45" y1="63.06" x2="44.07" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT8">
+<contactref element="J25" pad="6"/>
+<contactref element="J27" pad="3"/>
+<wire x1="33.91" y1="65.6" x2="26.29" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-8">
+<contactref element="J25" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="25.02" y="73.22"/>
+<vertex x="45.34" y="73.22"/>
+<vertex x="45.34" y="55.44"/>
+<vertex x="25.02" y="55.44"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="25.02" y="55.44"/>
+<vertex x="25.02" y="73.22"/>
+<vertex x="45.34" y="73.22"/>
+<vertex x="45.34" y="55.44"/>
+</polygon>
+<contactref element="J26" pad="4"/>
+<wire x1="36.45" y1="68.14" x2="44.07" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+8">
+<contactref element="J25" pad="4"/>
+<contactref element="J27" pad="2"/>
+<wire x1="33.91" y1="63.06" x2="26.29" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL18">
+<contactref element="J25" pad="1"/>
+<contactref element="J26" pad="1"/>
+<wire x1="36.45" y1="60.52" x2="44.07" y2="60.52" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL19">
+<contactref element="J28" pad="8"/>
+<contactref element="J30" pad="4"/>
+<wire x1="33.91" y1="86.62" x2="26.29" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)9">
+<contactref element="J28" pad="5"/>
+<contactref element="J29" pad="3"/>
+<wire x1="36.45" y1="84.08" x2="44.07" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)9">
+<contactref element="J28" pad="3"/>
+<contactref element="J29" pad="2"/>
+<wire x1="36.45" y1="81.54" x2="44.07" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT9">
+<contactref element="J28" pad="6"/>
+<contactref element="J30" pad="3"/>
+<wire x1="33.91" y1="84.08" x2="26.29" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-9">
+<contactref element="J28" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="25.02" y="91.7"/>
+<vertex x="45.34" y="91.7"/>
+<vertex x="45.34" y="73.92"/>
+<vertex x="25.02" y="73.92"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="25.02" y="73.92"/>
+<vertex x="25.02" y="91.7"/>
+<vertex x="45.34" y="91.7"/>
+<vertex x="45.34" y="73.92"/>
+</polygon>
+<contactref element="J29" pad="4"/>
+<wire x1="36.45" y1="86.62" x2="44.07" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+9">
+<contactref element="J28" pad="4"/>
+<contactref element="J30" pad="2"/>
+<wire x1="33.91" y1="81.54" x2="26.29" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL20">
+<contactref element="J28" pad="1"/>
+<contactref element="J29" pad="1"/>
+<wire x1="36.45" y1="79" x2="44.07" y2="79" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL21">
+<contactref element="J31" pad="8"/>
+<contactref element="J33" pad="4"/>
+<wire x1="54.93" y1="12.7" x2="47.31" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)10">
+<contactref element="J31" pad="5"/>
+<contactref element="J32" pad="3"/>
+<wire x1="57.47" y1="10.16" x2="65.09" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)10">
+<contactref element="J31" pad="3"/>
+<contactref element="J32" pad="2"/>
+<wire x1="57.47" y1="7.62" x2="65.09" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT10">
+<contactref element="J31" pad="6"/>
+<contactref element="J33" pad="3"/>
+<wire x1="54.93" y1="10.16" x2="47.31" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-10">
+<contactref element="J31" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="46.04" y="17.78"/>
+<vertex x="66.36" y="17.78"/>
+<vertex x="66.36" y="0"/>
+<vertex x="46.04" y="0"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="46.04" y="0"/>
+<vertex x="46.04" y="17.78"/>
+<vertex x="66.36" y="17.78"/>
+<vertex x="66.36" y="0"/>
+</polygon>
+<contactref element="J32" pad="4"/>
+<wire x1="57.47" y1="12.7" x2="65.09" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+10">
+<contactref element="J31" pad="4"/>
+<contactref element="J33" pad="2"/>
+<wire x1="54.93" y1="7.62" x2="47.31" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL22">
+<contactref element="J31" pad="1"/>
+<contactref element="J32" pad="1"/>
+<wire x1="57.47" y1="5.08" x2="65.09" y2="5.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL23">
+<contactref element="J34" pad="8"/>
+<contactref element="J36" pad="4"/>
+<wire x1="54.93" y1="31.18" x2="47.31" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)11">
+<contactref element="J34" pad="5"/>
+<contactref element="J35" pad="3"/>
+<wire x1="57.47" y1="28.64" x2="65.09" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)11">
+<contactref element="J34" pad="3"/>
+<contactref element="J35" pad="2"/>
+<wire x1="57.47" y1="26.1" x2="65.09" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT11">
+<contactref element="J34" pad="6"/>
+<contactref element="J36" pad="3"/>
+<wire x1="54.93" y1="28.64" x2="47.31" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-11">
+<contactref element="J34" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="46.04" y="36.26"/>
+<vertex x="66.36" y="36.26"/>
+<vertex x="66.36" y="18.48"/>
+<vertex x="46.04" y="18.48"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="46.04" y="18.48"/>
+<vertex x="46.04" y="36.26"/>
+<vertex x="66.36" y="36.26"/>
+<vertex x="66.36" y="18.48"/>
+</polygon>
+<contactref element="J35" pad="4"/>
+<wire x1="57.47" y1="31.18" x2="65.09" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+11">
+<contactref element="J34" pad="4"/>
+<contactref element="J36" pad="2"/>
+<wire x1="54.93" y1="26.1" x2="47.31" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL24">
+<contactref element="J34" pad="1"/>
+<contactref element="J35" pad="1"/>
+<wire x1="57.47" y1="23.56" x2="65.09" y2="23.56" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL25">
+<contactref element="J37" pad="8"/>
+<contactref element="J39" pad="4"/>
+<wire x1="54.93" y1="49.66" x2="47.31" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)12">
+<contactref element="J37" pad="5"/>
+<contactref element="J38" pad="3"/>
+<wire x1="57.47" y1="47.12" x2="65.09" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)12">
+<contactref element="J37" pad="3"/>
+<contactref element="J38" pad="2"/>
+<wire x1="57.47" y1="44.58" x2="65.09" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT12">
+<contactref element="J37" pad="6"/>
+<contactref element="J39" pad="3"/>
+<wire x1="54.93" y1="47.12" x2="47.31" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-12">
+<contactref element="J37" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="46.04" y="54.74"/>
+<vertex x="66.36" y="54.74"/>
+<vertex x="66.36" y="36.96"/>
+<vertex x="46.04" y="36.96"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="46.04" y="36.96"/>
+<vertex x="46.04" y="54.74"/>
+<vertex x="66.36" y="54.74"/>
+<vertex x="66.36" y="36.96"/>
+</polygon>
+<contactref element="J38" pad="4"/>
+<wire x1="57.47" y1="49.66" x2="65.09" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+12">
+<contactref element="J37" pad="4"/>
+<contactref element="J39" pad="2"/>
+<wire x1="54.93" y1="44.58" x2="47.31" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL26">
+<contactref element="J37" pad="1"/>
+<contactref element="J38" pad="1"/>
+<wire x1="57.47" y1="42.04" x2="65.09" y2="42.04" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL27">
+<contactref element="J40" pad="8"/>
+<contactref element="J42" pad="4"/>
+<wire x1="54.93" y1="68.14" x2="47.31" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)13">
+<contactref element="J40" pad="5"/>
+<contactref element="J41" pad="3"/>
+<wire x1="57.47" y1="65.6" x2="65.09" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)13">
+<contactref element="J40" pad="3"/>
+<contactref element="J41" pad="2"/>
+<wire x1="57.47" y1="63.06" x2="65.09" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT13">
+<contactref element="J40" pad="6"/>
+<contactref element="J42" pad="3"/>
+<wire x1="54.93" y1="65.6" x2="47.31" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-13">
+<contactref element="J40" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="46.04" y="73.22"/>
+<vertex x="66.36" y="73.22"/>
+<vertex x="66.36" y="55.44"/>
+<vertex x="46.04" y="55.44"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="46.04" y="55.44"/>
+<vertex x="46.04" y="73.22"/>
+<vertex x="66.36" y="73.22"/>
+<vertex x="66.36" y="55.44"/>
+</polygon>
+<contactref element="J41" pad="4"/>
+<wire x1="57.47" y1="68.14" x2="65.09" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+13">
+<contactref element="J40" pad="4"/>
+<contactref element="J42" pad="2"/>
+<wire x1="54.93" y1="63.06" x2="47.31" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL28">
+<contactref element="J40" pad="1"/>
+<contactref element="J41" pad="1"/>
+<wire x1="57.47" y1="60.52" x2="65.09" y2="60.52" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL29">
+<contactref element="J43" pad="8"/>
+<contactref element="J45" pad="4"/>
+<wire x1="54.93" y1="86.62" x2="47.31" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)14">
+<contactref element="J43" pad="5"/>
+<contactref element="J44" pad="3"/>
+<wire x1="57.47" y1="84.08" x2="65.09" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)14">
+<contactref element="J43" pad="3"/>
+<contactref element="J44" pad="2"/>
+<wire x1="57.47" y1="81.54" x2="65.09" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT14">
+<contactref element="J43" pad="6"/>
+<contactref element="J45" pad="3"/>
+<wire x1="54.93" y1="84.08" x2="47.31" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-14">
+<contactref element="J43" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="46.04" y="91.7"/>
+<vertex x="66.36" y="91.7"/>
+<vertex x="66.36" y="73.92"/>
+<vertex x="46.04" y="73.92"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="46.04" y="73.92"/>
+<vertex x="46.04" y="91.7"/>
+<vertex x="66.36" y="91.7"/>
+<vertex x="66.36" y="73.92"/>
+</polygon>
+<contactref element="J44" pad="4"/>
+<wire x1="57.47" y1="86.62" x2="65.09" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+14">
+<contactref element="J43" pad="4"/>
+<contactref element="J45" pad="2"/>
+<wire x1="54.93" y1="81.54" x2="47.31" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL30">
+<contactref element="J43" pad="1"/>
+<contactref element="J44" pad="1"/>
+<wire x1="57.47" y1="79" x2="65.09" y2="79" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL31">
+<contactref element="J46" pad="8"/>
+<contactref element="J48" pad="4"/>
+<wire x1="75.95" y1="12.7" x2="68.33" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)15">
+<contactref element="J46" pad="5"/>
+<contactref element="J47" pad="3"/>
+<wire x1="78.49" y1="10.16" x2="86.11" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)15">
+<contactref element="J46" pad="3"/>
+<contactref element="J47" pad="2"/>
+<wire x1="78.49" y1="7.62" x2="86.11" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT15">
+<contactref element="J46" pad="6"/>
+<contactref element="J48" pad="3"/>
+<wire x1="75.95" y1="10.16" x2="68.33" y2="10.16" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-15">
+<contactref element="J46" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="67.06" y="17.78"/>
+<vertex x="87.38" y="17.78"/>
+<vertex x="87.38" y="0"/>
+<vertex x="67.06" y="0"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="67.06" y="0"/>
+<vertex x="67.06" y="17.78"/>
+<vertex x="87.38" y="17.78"/>
+<vertex x="87.38" y="0"/>
+</polygon>
+<contactref element="J47" pad="4"/>
+<wire x1="78.49" y1="12.7" x2="86.11" y2="12.7" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+15">
+<contactref element="J46" pad="4"/>
+<contactref element="J48" pad="2"/>
+<wire x1="75.95" y1="7.62" x2="68.33" y2="7.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL32">
+<contactref element="J46" pad="1"/>
+<contactref element="J47" pad="1"/>
+<wire x1="78.49" y1="5.08" x2="86.11" y2="5.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL33">
+<contactref element="J49" pad="8"/>
+<contactref element="J51" pad="4"/>
+<wire x1="75.95" y1="31.18" x2="68.33" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)16">
+<contactref element="J49" pad="5"/>
+<contactref element="J50" pad="3"/>
+<wire x1="78.49" y1="28.64" x2="86.11" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)16">
+<contactref element="J49" pad="3"/>
+<contactref element="J50" pad="2"/>
+<wire x1="78.49" y1="26.1" x2="86.11" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT16">
+<contactref element="J49" pad="6"/>
+<contactref element="J51" pad="3"/>
+<wire x1="75.95" y1="28.64" x2="68.33" y2="28.64" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-16">
+<contactref element="J49" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="67.06" y="36.26"/>
+<vertex x="87.38" y="36.26"/>
+<vertex x="87.38" y="18.48"/>
+<vertex x="67.06" y="18.48"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="67.06" y="18.48"/>
+<vertex x="67.06" y="36.26"/>
+<vertex x="87.38" y="36.26"/>
+<vertex x="87.38" y="18.48"/>
+</polygon>
+<contactref element="J50" pad="4"/>
+<wire x1="78.49" y1="31.18" x2="86.11" y2="31.18" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+16">
+<contactref element="J49" pad="4"/>
+<contactref element="J51" pad="2"/>
+<wire x1="75.95" y1="26.1" x2="68.33" y2="26.1" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL34">
+<contactref element="J49" pad="1"/>
+<contactref element="J50" pad="1"/>
+<wire x1="78.49" y1="23.56" x2="86.11" y2="23.56" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL35">
+<contactref element="J52" pad="8"/>
+<contactref element="J54" pad="4"/>
+<wire x1="75.95" y1="49.66" x2="68.33" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)17">
+<contactref element="J52" pad="5"/>
+<contactref element="J53" pad="3"/>
+<wire x1="78.49" y1="47.12" x2="86.11" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)17">
+<contactref element="J52" pad="3"/>
+<contactref element="J53" pad="2"/>
+<wire x1="78.49" y1="44.58" x2="86.11" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT17">
+<contactref element="J52" pad="6"/>
+<contactref element="J54" pad="3"/>
+<wire x1="75.95" y1="47.12" x2="68.33" y2="47.12" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-17">
+<contactref element="J52" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="67.06" y="54.74"/>
+<vertex x="87.38" y="54.74"/>
+<vertex x="87.38" y="36.96"/>
+<vertex x="67.06" y="36.96"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="67.06" y="36.96"/>
+<vertex x="67.06" y="54.74"/>
+<vertex x="87.38" y="54.74"/>
+<vertex x="87.38" y="36.96"/>
+</polygon>
+<contactref element="J53" pad="4"/>
+<wire x1="78.49" y1="49.66" x2="86.11" y2="49.66" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+17">
+<contactref element="J52" pad="4"/>
+<contactref element="J54" pad="2"/>
+<wire x1="75.95" y1="44.58" x2="68.33" y2="44.58" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL36">
+<contactref element="J52" pad="1"/>
+<contactref element="J53" pad="1"/>
+<wire x1="78.49" y1="42.04" x2="86.11" y2="42.04" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL37">
+<contactref element="J55" pad="8"/>
+<contactref element="J57" pad="4"/>
+<wire x1="75.95" y1="68.14" x2="68.33" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)18">
+<contactref element="J55" pad="5"/>
+<contactref element="J56" pad="3"/>
+<wire x1="78.49" y1="65.6" x2="86.11" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)18">
+<contactref element="J55" pad="3"/>
+<contactref element="J56" pad="2"/>
+<wire x1="78.49" y1="63.06" x2="86.11" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT18">
+<contactref element="J55" pad="6"/>
+<contactref element="J57" pad="3"/>
+<wire x1="75.95" y1="65.6" x2="68.33" y2="65.6" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-18">
+<contactref element="J55" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="67.06" y="73.22"/>
+<vertex x="87.38" y="73.22"/>
+<vertex x="87.38" y="55.44"/>
+<vertex x="67.06" y="55.44"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="67.06" y="55.44"/>
+<vertex x="67.06" y="73.22"/>
+<vertex x="87.38" y="73.22"/>
+<vertex x="87.38" y="55.44"/>
+</polygon>
+<contactref element="J56" pad="4"/>
+<wire x1="78.49" y1="68.14" x2="86.11" y2="68.14" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+18">
+<contactref element="J55" pad="4"/>
+<contactref element="J57" pad="2"/>
+<wire x1="75.95" y1="63.06" x2="68.33" y2="63.06" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL38">
+<contactref element="J55" pad="1"/>
+<contactref element="J56" pad="1"/>
+<wire x1="78.49" y1="60.52" x2="86.11" y2="60.52" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL39">
+<contactref element="J58" pad="8"/>
+<contactref element="J60" pad="4"/>
+<wire x1="75.95" y1="86.62" x2="68.33" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="NON-INVERTING(+)19">
+<contactref element="J58" pad="5"/>
+<contactref element="J59" pad="3"/>
+<wire x1="78.49" y1="84.08" x2="86.11" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="INVERTING(-)19">
+<contactref element="J58" pad="3"/>
+<contactref element="J59" pad="2"/>
+<wire x1="78.49" y1="81.54" x2="86.11" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OUTPUT19">
+<contactref element="J58" pad="6"/>
+<contactref element="J60" pad="3"/>
+<wire x1="75.95" y1="84.08" x2="68.33" y2="84.08" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC-19">
+<contactref element="J58" pad="7"/>
+<polygon width="0.4064" layer="16">
+<vertex x="67.06" y="91.7"/>
+<vertex x="87.38" y="91.7"/>
+<vertex x="87.38" y="73.92"/>
+<vertex x="67.06" y="73.92"/>
+</polygon>
+<polygon width="0.4064" layer="1">
+<vertex x="67.06" y="73.92"/>
+<vertex x="67.06" y="91.7"/>
+<vertex x="87.38" y="91.7"/>
+<vertex x="87.38" y="73.92"/>
+</polygon>
+<contactref element="J59" pad="4"/>
+<wire x1="78.49" y1="86.62" x2="86.11" y2="86.62" width="0.4064" layer="16"/>
+</signal>
+<signal name="VCC+19">
+<contactref element="J58" pad="4"/>
+<contactref element="J60" pad="2"/>
+<wire x1="75.95" y1="81.54" x2="68.33" y2="81.54" width="0.4064" layer="16"/>
+</signal>
+<signal name="OFFSET_NULL40">
+<contactref element="J58" pad="1"/>
+<contactref element="J59" pad="1"/>
+<wire x1="78.49" y1="79" x2="86.11" y2="79" width="0.4064" layer="16"/>
+</signal>
+</signals>
+<errors>
+<approved hash="5,16,2cde54f340116bcb"/>
+<approved hash="19,16,75c882a021f28d60"/>
+<approved hash="19,16,3b52ab3afd7b1f10"/>
+<approved hash="19,16,64a36828d1ce86bf"/>
+<approved hash="19,16,2a02faf2ecea9555"/>
+<approved hash="19,16,1ef711e515059beb"/>
+<approved hash="19,16,e9c44c095648e81d"/>
+<approved hash="19,16,cc0269f688100d0c"/>
+<approved hash="19,16,165b045c6527dc67"/>
+<approved hash="19,16,daf2116765aadea3"/>
+<approved hash="19,16,25dea8355b4e508a"/>
+<approved hash="19,16,97ccf1d0d0515f4e"/>
+<approved hash="5,16,86b6e92d09d1eba7"/>
+<approved hash="5,16,2cde54c0eb25c2cc"/>
+<approved hash="19,16,6792432641ce6880"/>
+<approved hash="19,16,5ef781a0cffc1d51"/>
+<approved hash="19,16,351fb04ca593d8d7"/>
+<approved hash="19,16,0a282d6f3a7be52b"/>
+<approved hash="19,16,b4ad47bf20d85cbf"/>
+<approved hash="19,16,6b16a252a1476417"/>
+<approved hash="19,16,c9caf6e5ef139783"/>
+<approved hash="5,16,2cde54fa3f9fb77c"/>
+<approved hash="19,16,b21615a577f22eba"/>
+<approved hash="19,16,084d541c89ff2b55"/>
+<approved hash="19,16,e5a46b83d8374511"/>
+<approved hash="19,16,6bcefab28bf29c9e"/>
+<approved hash="19,16,755530d50eae00e2"/>
+<approved hash="19,16,841f4b488a9221d6"/>
+<approved hash="5,16,2cde54c9a6ac0e43"/>
+<approved hash="19,16,3918eca167ce788b"/>
+<approved hash="19,16,f17cdf20dffb3b5b"/>
+<approved hash="19,16,f32c026fc17a542a"/>
+</errors>
+</board>
+</drawing>
+</eagle>
